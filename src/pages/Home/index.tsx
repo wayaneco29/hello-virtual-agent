@@ -35,7 +35,7 @@ const HomePage = () => {
             className="absolute object-cover filter brightness-50 blur-sm h-full w-full"
           />
           <div className="flex justify-center items-center relative h-full md:h-[80%]">
-            <div className="text-2xl absolute text-white text-center top-[30%] sm:text-[3.5rem] lg:top-56">
+            <div className="text-2xl px-6 sm:px-0 absolute text-white text-center top-[30%] sm:text-[3.5rem] lg:top-56">
               <span className="font-bold">
                 Outsource to{' '}
                 <span className="text-primary">
@@ -69,7 +69,7 @@ const HomePage = () => {
       <section className="relative">
         <div className="min-h-[500px] bg-[#ebf4f3]">
           <div className="wrapper py-8">
-            <div className="text-center text-xl mb-6 sm:mb-12 sm:text-[38px]">
+            <div className="text-center text-2xl mb-6 sm:mb-12 sm:text-[38px]">
               Tell us{' '}
               <span className="text-primary font-extrabold ">
                 what you need
@@ -81,13 +81,13 @@ const HomePage = () => {
                 <img
                   src="https://outsourcingangel.com/wp-content/uploads/2022/04/Angel-Icon.jpg"
                   alt=""
-                  className="w-[90px] h-[90px] sm:w-[140px] sm:h-[140px] mx-auto mb-6"
+                  className="w-[90px] h-[90px] sm:w-[140px] sm:h-[140px] mx-auto mb-4 sm:mb-6"
                 />
-                <div className="text-lg sm:text-[28px] text-center mb-6">
+                <div className="text-lg sm:text-[28px] text-center mb-4 sm:mb-6">
                   I need a <span className="font-bold">Virtual Assistant</span>{' '}
                   to help me with marketing, admin and more
                 </div>
-                <div className="text-center text-base sm:text-[17px] px-5 mb-8">
+                <div className="text-center text-base sm:text-[17px] px-5 mb-4 sm:mb-8">
                   We’ll recruit, hire, on-board a Filipino Virtual Assistant
                   that fits the demands of your business, schedule and style.
                 </div>
@@ -104,16 +104,16 @@ const HomePage = () => {
                 <img
                   src="https://outsourcingangel.com/wp-content/uploads/2022/04/VTAP-Icon.jpg"
                   alt=""
-                  className="w-[90px] h-[90px] sm:w-[140px] sm:h-[140px] mx-auto mb-6"
+                  className="w-[90px] h-[90px] sm:w-[140px] sm:h-[140px] mx-auto mb-2 sm:mb-6"
                 />
-                <div className="text-lg sm:text-[28px] text-center mb-6">
+                <div className="text-lg sm:text-[28px] text-center mb-4 sm:mb-6">
                   My business needs{' '}
                   <span className="font-bold">
                     systemisation and automation
                   </span>{' '}
                   first
                 </div>
-                <div className="text-center text-base sm:text-[17px] px-5 mb-8">
+                <div className="text-center text-base sm:text-[17px] px-5 mb-4 sm:mb-8">
                   Our Systemise & Scale Up Experts can transform the way your
                   business operates with systemised business workflows,
                   end-to-end automation, digital tools and virtual staff.
@@ -149,7 +149,7 @@ const HomePage = () => {
         />
         <div className="wrapper min-h-[500px] py-8">
           <div className="w-full md:w-1/2">
-            <div className="text-xl sm:text-[38px] leading-tight">
+            <div className="text-2xl sm:text-[38px] leading-tight">
               Here’s what your{' '}
               <span className="text-primary font-bold">
                 Virtual Assistants can help
@@ -164,166 +164,166 @@ const HomePage = () => {
             </div>
           </div>
           <div className="w-full mt-6 sm:mt-16">
-            <div className="flex gap-6 cursor-pointer">
-              <div className="flex flex-col w-full sm:w-[350px] min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
+            <div className="flex gap-6 cursor-pointer flex-col sm:flex-row">
+              <div className="flex flex-col w-full sm:w-[350px] sm:min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
                 <img
                   src="https://outsourcingangel.com/wp-content/uploads/2022/04/Social-Media-Management.png"
                   alt=""
-                  className="w-[80px] mb-6"
+                  className="w-[60px] sm:w-[80px] mb-4 sm:mb-6"
                 />
-                <div className="font-bold text-lg sm:text-[28px] leading-tight mb-6">
+                <div className="font-bold text-lg sm:text-[28px] leading-tight mb-4 sm:mb-6">
                   Social Media Management
                 </div>
-                <ul className="list-none text-left  flex flex-col  gap-2">
+                <ul className="list-none text-left flex flex-col gap-2">
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Design social media content
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Manage social media scheduler
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Write social media captions
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Social media engagement (liking, commenting, following)
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Hashtag research
                     </span>
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col w-full sm:w-[350px] min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
+              <div className="flex flex-col w-full sm:w-[350px] sm:min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
                 <img
                   src="https://outsourcingangel.com/wp-content/uploads/2022/04/Digital-Marketing.png"
                   alt=""
-                  className="w-[80px] mb-6"
+                  className="w-[60px] sm:w-[80px] mb-4 sm:mb-6"
                 />
-                <div className="font-bold text-[28px] leading-tight mb-6">
+                <div className="font-bold text-lg sm:text-[28px] leading-tight mb-4 sm:mb-6">
                   Digital Marketing
                 </div>
-                <ul className="list-none text-left  flex flex-col  gap-2">
+                <ul className="list-none text-left flex flex-col gap-2">
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Set-up and manage social media ads and remarketing
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Set-up and manage A/B tests for ads and landing pages
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Optimise social media videos with end screens, clickable
                       links
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Set-up and manage ClickFunnel pages
                     </span>
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col w-full sm:w-[350px] min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
+              <div className="flex flex-col w-full sm:w-[350px] sm:min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
                 <img
                   src="https://outsourcingangel.com/wp-content/uploads/2022/04/Customer-Service.png"
                   alt=""
-                  className="w-[80px] mb-6"
+                  className="w-[60px] sm:w-[80px] mb-4 sm:mb-6"
                 />
-                <div className="font-bold text-[28px] leading-tight mb-6">
+                <div className="font-bold text-lg sm:text-[28px] leading-tight mb-4 sm:mb-6">
                   Customer Service
                 </div>
-                <ul className="list-none text-left  flex flex-col  gap-2">
+                <ul className="list-none text-left flex flex-col gap-2">
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Pre-sales questions
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Create and update customer support scripts
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Create and send emails, catalogs and newsletters to
                       subscribers
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Manage inbox and response rate
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Moderate comments and reviews
                     </span>
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col w-full sm:w-[350px] min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
+              <div className="flex flex-col w-full sm:w-[350px] sm:min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
                 <img
                   src="	https://outsourcingangel.com/wp-content/uploads/2022/04/Social-Media-Management.png"
                   alt=""
-                  className="w-[80px] mb-6"
+                  className="w-[60px] sm:w-[80px] mb-4 sm:mb-6"
                 />
-                <div className="font-bold text-[28px] leading-tight mb-6">
+                <div className="font-bold text-lg sm:text-[28px] leading-tight mb-4 sm:mb-6">
                   Social Media Management
                 </div>
-                <ul className="list-none text-left  flex flex-col  gap-2">
+                <ul className="list-none text-left flex flex-col gap-2">
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Design social media content
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Manage social media scheduler
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Write social media captions
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Social media engagement (liking, commenting, following)
                     </span>
                   </li>
                   <li className="flex items-start">
                     <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                    <span className="text-[17px] mt-[1px]">
+                    <span className="text-base sm:text-[17px] mt-[1px]">
                       Hashtag research
                     </span>
                   </li>
@@ -351,7 +351,7 @@ const HomePage = () => {
       <section className="relative py-6 md:py-14">
         <div className="wrapper pb-6 sm:pb-16">
           <div className="px-6 sm:px-44">
-            <div className="text-xl sm:text-[38px] text-center mb-4 sm:mb-6">
+            <div className="text-2xl sm:text-[38px] text-center mb-4 sm:mb-6">
               How our{' '}
               <span className="font-bold text-primary">
                 Virtual Assistant service
@@ -459,8 +459,8 @@ const HomePage = () => {
       <section className="relative bg-[#ebf4f3] pb-16 sm:pb-32">
         <div className="wrapper">
           <div className="w-full md:w-1/2">
-            <div className="pb-6 sm:pb-8 sm:pr-12">
-              <div className="text-xl sm:text-[38px] leading-tight">
+            <div className="pb-6 pt-6 sm:pt-0 sm:pb-8 sm:pr-12">
+              <div className="text-2xl sm:text-[38px] leading-tight">
                 Why find your{' '}
                 <span className="text-primary font-bold">
                   Virtual Assistant
@@ -565,7 +565,7 @@ const HomePage = () => {
       <section className="relative pb-6 sm:pb-16">
         <div className="wrapper">
           <div className="w-full">
-            <div className="text-xl pt-6 sm:pt-0 sm:text-[38px] text-center">
+            <div className="text-2xl pt-6 sm:pt-0 sm:text-[38px] text-center">
               Hear from{' '}
               <span className="font-bold text-primary">Happy Clients</span>
             </div>
@@ -631,7 +631,7 @@ const HomePage = () => {
                 We’re different because we’re an end-to-end service <br /> that
                 will hold your hand every step of the way.
               </div>
-              <button className="py-2 px-4 text-sm sm:py-4 sm:px-7 rounded-full bg-primary text-white font-bold tracking-wide min-w-fit">
+              <button className="py-2 px-4 text-sm mt-4 sm:mt-0 sm:py-4 sm:px-7 rounded-full bg-primary text-white font-bold tracking-wide min-w-fit">
                 GET STARTED
               </button>
             </div>
@@ -641,7 +641,7 @@ const HomePage = () => {
       <section className="relative pb-6 sm:pb-16">
         <div className="wrapper">
           <div className="text-left">
-            <div className="text-xl sm:text-[38px]">
+            <div className="text-2xl sm:text-[38px]">
               Featured{' '}
               <span className="font-bold text-primary">Success Stories</span>
             </div>
@@ -695,19 +695,19 @@ const HomePage = () => {
             <div className="flex items-center justify-between h-full px-6 sm:px-20 gap-4 sm:gap-8 flex-col sm:flex-row">
               <img
                 src="https://outsourcingangel.com/wp-content/uploads/2023/02/OA-Lifetime-Guarantee.jpg"
-                className="h-44 sm:h-56"
+                className="h-36 sm:h-56"
               />
               <div>
-                <div className="font-bold text-lg sm:text-xl mb-4 sm:mb-8">
+                <div className="font-bold text-base sm:text-lg mb-4 sm:mb-8">
                   100% Lifetime Guarantee
                 </div>
-                <div className="mb-4 sm:mb-8 text-base sm:text-lg">
+                <div className="mb-4 sm:mb-8 text-sm sm:text-base">
                   If for any reason, you’re not happy with your Virtual
                   Assistant. We’ll find you a replacement at zero additional
                   cost. Plus, you’ll get 1 week of VA service for free! This is
                   to help you get settled with your new VA.
                 </div>
-                <div className="text-base sm: text-lg">
+                <div className="text-sm sm:text-base">
                   <span className="font-bold">
                     The best part? You’re covered for a lifetime.
                   </span>{' '}

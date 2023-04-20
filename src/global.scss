@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('styles/font.scss');
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif, system-ui;
+  }
+}
+
+.wrapper {
+  @apply px-2 sm:px-4 md:px-9 lg:px-16 xl:px-28 2xl:px-36;
+}

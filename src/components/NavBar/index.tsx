@@ -22,19 +22,10 @@ export const NavBar = () => {
             Services
           </div>
           <div className="nav-list cursor-pointer hover:text-primary">
-            Virtual Assistants
-          </div>
-          <div className="nav-list cursor-pointer hover:text-primary">
-            Client Reviews
-          </div>
-          <div className="nav-list cursor-pointer hover:text-primary">
-            Learn
-          </div>
-          <div className="nav-list cursor-pointer hover:text-primary">
             Contact Us
           </div>
           <div className="rounded-full min-w-fit px-6 py-2 bg-primary text-sm cursor-pointer text-white!">
-            BOOK A CALL
+            LET'S CHAT
           </div>
         </div>
       </div>

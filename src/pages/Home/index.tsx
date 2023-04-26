@@ -35,7 +35,7 @@ const HomePage = () => {
             className="absolute object-cover filter brightness-50 blur-sm h-full w-full"
           />
           <div className="flex justify-center items-center relative h-full md:h-[80%]">
-            <div className="text-2xl px-6 sm:px-0 absolute text-white text-center top-[30%] sm:text-[3.5rem] lg:top-56">
+            <div className="text-2xl px-6 sm:px-0 absolute text-white text-center top-[30%] sm:text-[3.5rem] sm:leading-[4.5rem] lg:top-56">
               <span className="font-bold">
                 Outsource to{' '}
                 <span className="text-primary">

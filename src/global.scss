@@ -15,6 +15,29 @@
   }
 }
 
-.wrapper {
-  @apply px-4 sm:px-4 md:px-9 lg:px-16 xl:px-28 2xl:px-36;
+:root {
+  --primary: #ff6000;
+  --secondary: #f5b947;
+  --greeny-gray: #ebf4f3;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 17px;
+}
+
+.main-wrapper {
+  @apply px-4 sm:px-4 md:px-10 lg:px-36 xl:px-48 2xl:px-64;
+}
+
+.nav-wrapper {
+  @apply px-4 sm:px-4 md:px-5 lg:px-14 xl:px-20 2xl:px-24;
+}
+
+.title {
+  @apply text-h3 leading-tight sm:text-h2 md:text-h1 lg:text-h1;
+}
+
+.sub-title {
+  @apply text-h2;
 }

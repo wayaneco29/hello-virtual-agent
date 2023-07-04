@@ -2,15 +2,22 @@
   .nav-list {
     position: relative;
 
-    &:hover::before {
-      position: absolute;
-      content: '';
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 2px;
-      background-color: #ff6000;
-      animation: progress 300ms forwards;
+    &:hover,
+    &.active {
+      span {
+        color: #ff6000;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #ff6000;
+        animation: progress 300ms forwards;
+      }
     }
   }
 

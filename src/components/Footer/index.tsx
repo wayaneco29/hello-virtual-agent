@@ -9,7 +9,7 @@ import Instagram from 'assets/icons/svg/instagram.svg';
 export const Footer = () => {
   return (
     <div className="bg-black text-white">
-      <div className="wrapper py-14 border-b border-solid">
+      <div className="nav-wrapper py-14 border-b border-solid">
         <div className="flex gap-8">
           <div className="flex-1 flex gap-0 flex-col">
             <div className="text-primary font-bold mb-1">General VA</div>

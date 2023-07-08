@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 import { SectionTitle, Button, Container, CurveSVG } from 'components';
 
@@ -28,7 +29,11 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>Hello Virtual Agent | Home</title>
+        <meta about="og:url" content="heello word" />
+      </Helmet>
       <section className="relative" ref={ref as any}>
         <div className="h-[50vh] lg:h-[75vh] bg-gray-900">
           <img
@@ -663,6 +668,6 @@ export const HomePage = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </>
   );
 };

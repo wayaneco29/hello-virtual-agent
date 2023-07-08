@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import { NavBar, Footer } from 'components';
-import { HomePage, AboutPage } from 'pages';
+import { HomePage, AboutPage, ServicesPage } from 'pages';
 
 import 'global.scss';
 
@@ -28,6 +28,12 @@ const App = () => {
             index
             path="/about-us"
             element={<AboutPage />}
+            errorElement={<div>Error...</div>}
+          />
+          <Route
+            index
+            path="/services"
+            element={<ServicesPage />}
             errorElement={<div>Error...</div>}
           />
           <Route

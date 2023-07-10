@@ -1,4 +1,4 @@
-import { Container, CurveSVG, SectionTitle } from 'components';
+import { Button, Container, CurveSVG, SectionTitle } from 'components';
 
 import HVALogoBG from 'assets/images/HVA-Logo-BG.webp';
 import VA1 from 'assets/images/va-1.webp';
@@ -81,6 +81,34 @@ export const AboutPage = () => {
           <div className="flex-1">
             <img src={VA3} alt="" />
           </div>
+        </div>
+        <CurveSVG color="fill-secondary" />
+      </Container>
+      <Container parentClassName="bg-secondary" subParentClassName="pb-16">
+        <SectionTitle className="text-center">
+          <span className="font-bold text-primary">
+            Hire a Virtual Assistant
+          </span>{' '}
+          without the risk
+        </SectionTitle>
+        <div className="px-20 my-10 text-center">
+          For over 10 years, Hello Virtual Agent has been training, recruiting,
+          and managing Virtual Assistants. Our recruitment process guarantees
+          that only the most qualified Virtual Assistants are recommended for
+          employment.
+        </div>
+        <div className="px-20 my-10 text-center">
+          If your business is ready to grow wings, book a Discovery Call with us
+          today so we can find you an Agent.
+        </div>
+        <div className="text-center">
+          <Button
+            variant="contained"
+            rounded
+            className="py-4 px-10 font-bold text-white"
+          >
+            BOOK A CALL NOW!
+          </Button>
         </div>
       </Container>
     </>

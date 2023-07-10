@@ -31,7 +31,7 @@ export const Button = ({
   console.log(buttonStyle);
   return (
     <button
-      className={classNames('py-2 px-4', className, buttonStyle)}
+      className={classNames('py-2 px-4', buttonStyle, className)}
       {...props}
     >
       {children}

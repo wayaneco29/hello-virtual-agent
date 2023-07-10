@@ -355,7 +355,7 @@ export const ServicesPage = () => {
           without the risk
         </SectionTitle>
         <div className="px-20 my-10 text-center">
-          For over 10 years, Outsourcing Angel has been training, recruiting,
+          For over 10 years, Hello Virtual Agent has been training, recruiting,
           and managing Virtual Assistants. Our recruitment process guarantees
           that only the most qualified Virtual Assistants are recommended for
           employment.

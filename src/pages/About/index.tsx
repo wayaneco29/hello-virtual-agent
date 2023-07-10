@@ -47,22 +47,20 @@ export const AboutPage = () => {
         </div>
         <CurveSVG color="fill-greeny-gray" />
       </Container>
-      <Container subParentClassName="bg-greeny-gray">
-        <div className="wrapper pt-12 pb-36">
-          <div className="flex gap-10">
-            <div className="flex-1">
-              <img src={VA2} alt="" />
-            </div>
-            <div className="flex-1">
-              <div className="text-3xl font-bold mb-8 text-primary">Goal</div>
-              <div>
-                Our main goal is to provide a result-driven solution based on
-                each person’s experiences and challenges. This way we can
-                connect outstanding VAs to the world and make them more
-                productive and successful. We accomplish this by helping clients
-                to select the most appropriate services we offer to meet and
-                exceed expectations.
-              </div>
+      <Container subParentClassName="bg-greeny-gray" className="pt-12 pb-44">
+        <div className="flex gap-10">
+          <div className="flex-1">
+            <img src={VA2} alt="" />
+          </div>
+          <div className="flex-1">
+            <div className="text-3xl font-bold mb-8 text-primary">Goal</div>
+            <div>
+              Our main goal is to provide a result-driven solution based on each
+              person’s experiences and challenges. This way we can connect
+              outstanding VAs to the world and make them more productive and
+              successful. We accomplish this by helping clients to select the
+              most appropriate services we offer to meet and exceed
+              expectations.
             </div>
           </div>
         </div>

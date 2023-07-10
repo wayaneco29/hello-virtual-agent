@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import { SectionTitle, Button, Container, CurveSVG } from 'components';
+import { SectionTitle, Button, Container, CurveSVG, Box } from 'components';
 
 import BackgroundImage from 'assets/icons/svg/asset.svg';
 import CheckImage from 'assets/icons/svg/check.svg';
@@ -144,171 +144,50 @@ export const HomePage = () => {
           </div>
         </div>
         <div className="w-full mt-6 sm:mt-16">
-          <div className="flex gap-6 cursor-pointer flex-col sm:flex-row">
-            <div className="flex flex-col w-full sm:w-[350px] sm:min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
-              <img
-                src="https://outsourcingangel.com/wp-content/uploads/2022/04/Social-Media-Management.png"
-                alt=""
-                className="w-[60px] sm:w-[80px] mb-4 sm:mb-6"
-              />
-              <div className="font-bold text-lg sm:text-[28px] leading-tight mb-4 sm:mb-6">
-                Social Media Management
-              </div>
-              <ul className="list-none text-left flex flex-col gap-2">
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Design social media content
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Manage social media scheduler
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Write social media captions
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Social media engagement (liking, commenting, following)
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Hashtag research
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col w-full sm:w-[350px] sm:min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
-              <img
-                src="https://outsourcingangel.com/wp-content/uploads/2022/04/Digital-Marketing.png"
-                alt=""
-                className="w-[60px] sm:w-[80px] mb-4 sm:mb-6"
-              />
-              <div className="font-bold text-lg sm:text-[28px] leading-tight mb-4 sm:mb-6">
-                Digital Marketing
-              </div>
-              <ul className="list-none text-left flex flex-col gap-2">
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Set-up and manage social media ads and remarketing
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Set-up and manage A/B tests for ads and landing pages
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Optimise social media videos with end screens, clickable
-                    links
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Set-up and manage ClickFunnel pages
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col w-full sm:w-[350px] sm:min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
-              <img
-                src="https://outsourcingangel.com/wp-content/uploads/2022/04/Customer-Service.png"
-                alt=""
-                className="w-[60px] sm:w-[80px] mb-4 sm:mb-6"
-              />
-              <div className="font-bold text-lg sm:text-[28px] leading-tight mb-4 sm:mb-6">
-                Customer Service
-              </div>
-              <ul className="list-none text-left flex flex-col gap-2">
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Pre-sales questions
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Create and update customer support scripts
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Create and send emails, catalogs and newsletters to
-                    subscribers
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Manage inbox and response rate
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Moderate comments and reviews
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col w-full sm:w-[350px] sm:min-w-[350px] p-6 sm:p-10 items-center text-center border border-solid border-primary rounded-xl">
-              <img
-                src="	https://outsourcingangel.com/wp-content/uploads/2022/04/Social-Media-Management.png"
-                alt=""
-                className="w-[60px] sm:w-[80px] mb-4 sm:mb-6"
-              />
-              <div className="font-bold text-lg sm:text-[28px] leading-tight mb-4 sm:mb-6">
-                Social Media Management
-              </div>
-              <ul className="list-none text-left flex flex-col gap-2">
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Design social media content
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Manage social media scheduler
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Write social media captions
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Social media engagement (liking, commenting, following)
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <img src={CheckImage} className="w-6 mb-[1px] mr-[3px]" />
-                  <span className="text-base sm:text-[17px] mt-[1px]">
-                    Hashtag research
-                  </span>
-                </li>
-              </ul>
-            </div>
+          <div className="flex gap-6 cursor-pointer snap-x snap-proximity overflow-x-auto w-full  flex-col sm:flex-row [&::-webkit-scrollbar]:hidden" >
+            <Box
+              image="https://outsourcingangel.com/wp-content/uploads/2022/04/Social-Media-Management.png"
+              title="Social Media Management"
+              children={[
+                'Design social media content',
+                'Manage social media scheduler',
+                'Write social media captions',
+                'Social media engagement (liking, commenting, following)',
+                'Hashtag research',
+              ]}
+            />
+            <Box
+              image="https://outsourcingangel.com/wp-content/uploads/2022/04/Digital-Marketing.png"
+              title="Digital Marketing"
+              children={[
+                'Set-up and manage social media ads and re-marketing',
+                'Set-up and manage A/B tests for ads and landing pages',
+                'Optimize social media videos with end screens, clickable links',
+                'Set-up and manage ClickFunnel pages',
+              ]}
+            />
+            <Box
+              image="https://outsourcingangel.com/wp-content/uploads/2022/04/Customer-Service.png"
+              title="Customer Service"
+              children={[
+                'Pre-sales questions',
+                'Create and update customer support scripts',
+                'Create and send emails, catalogs and newsletters to subscribers',
+                'Manage inbox and response rate',
+                'Moderate comments and reviews',
+              ]}
+            />
+            <Box
+              image="https://outsourcingangel.com/wp-content/uploads/2022/04/Social-Media-Management.png"
+              title="Social Media Management"
+              children={[
+                'Design social media content',
+                'Manage social media scheduler',
+                'Write social media captions',
+                'Social media engagement (liking, commenting, following)',
+                'Hashtag research',
+              ]}
+            />
           </div>
         </div>
       </Container>

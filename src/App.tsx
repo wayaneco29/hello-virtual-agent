@@ -2,15 +2,11 @@ import { Fragment } from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import { NavBar, Footer } from 'components';
-import { HomePage, AboutPage, ServicesPage } from 'pages';
+import { HomePage, AboutPage, ServicesPage, BookPage } from 'pages';
+
+import { ROUTE_ABOUT, ROUTE_BOOK, ROUTE_HOME, ROUTE_SERVICES } from 'constants';
 
 import 'global.scss';
-
-type RouteType = {
-  component: React.FunctionComponent;
-  path?: string;
-  index?: boolean;
-};
 
 const App = () => {
   return (
@@ -20,20 +16,26 @@ const App = () => {
         <Routes>
           <Route
             index
-            path="/"
+            path={ROUTE_HOME}
             element={<HomePage />}
             errorElement={<div>Error...</div>}
           />
           <Route
             index
-            path="/about-us"
+            path={ROUTE_ABOUT}
             element={<AboutPage />}
             errorElement={<div>Error...</div>}
           />
           <Route
             index
-            path="/services"
+            path={ROUTE_SERVICES}
             element={<ServicesPage />}
+            errorElement={<div>Error...</div>}
+          />
+          <Route
+            index
+            path={ROUTE_BOOK}
+            element={<BookPage />}
             errorElement={<div>Error...</div>}
           />
           <Route

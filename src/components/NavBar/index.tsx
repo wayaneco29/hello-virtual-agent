@@ -4,27 +4,36 @@ import classNames from 'classnames';
 
 import HVALogo from 'assets/images/HVA-Logo.webp';
 
+import {
+  ROUTE_ABOUT,
+  ROUTE_BOOK,
+  ROUTE_CONTACT,
+  ROUTE_FAQS,
+  ROUTE_REVIEWS,
+  ROUTE_SERVICES,
+} from 'constants';
+
 import './styles.scss';
 
 const NAV_LIST = [
   {
-    path: '/about-us',
+    path: ROUTE_ABOUT,
     name: 'ABOUT US',
   },
   {
-    path: '/services',
+    path: ROUTE_SERVICES,
     name: 'SERVICES',
   },
   {
-    path: '/reviews',
+    path: ROUTE_REVIEWS,
     name: 'REVIEWS',
   },
   {
-    path: '/faqs',
+    path: ROUTE_FAQS,
     name: 'FAQs',
   },
   {
-    path: '/contact-us',
+    path: ROUTE_CONTACT,
     name: 'CONTACT US',
   },
 ];
@@ -47,7 +56,7 @@ export const NavBar = () => {
     <nav
       id="navbar"
       className={classNames(
-        'w-full h-[60px] sm:h-[80px] bg-transparent flex items-center justify-between nav-wrapper fixed z-10 transition-all duration-200 top-0',
+        'w-full h-[60px] sm:h-[80px] bg-transparent flex items-center justify-between nav-wrapper fixed z-[9999] transition-all duration-200 top-0',
         navStyles
       )}
     >
@@ -72,8 +81,11 @@ export const NavBar = () => {
               <span>{item?.name}</span>
             </div>
           ))}
-          <div className="rounded-full min-w-fit px-6 py-2 bg-primary text-sm cursor-pointer text-white!">
-            LET'S CHAT
+          <div
+            className="rounded-full min-w-fit px-6 py-2 bg-primary text-sm cursor-pointer text-white!"
+            onClick={() => navigate(ROUTE_BOOK)}
+          >
+            BOOK NOW!
           </div>
         </div>
       </div>

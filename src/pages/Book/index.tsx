@@ -38,11 +38,11 @@ export const BookPage = () => {
     <div ref={ref as any}>
       <Container
         parentClassName="pt-[90px] overflow-hidden"
-        subParentClassName="pt-16 "
+        subParentClassName="pt-16"
       >
         <img
           src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-26.png.webp"
-          className="absolute -z-10 left-0 top-40 rotate-[60deg]"
+          className="absolute -z-10 -left-48 top-40 rotate-[60deg]"
         />
         <div className="flex gap-16">
           <div className="flex-1 min-h-[300px]">

@@ -3,7 +3,11 @@ import { Case, User, Calendar, SocialMedia } from 'components/SVG';
 
 export const HowItWorks = () => {
   return (
-    <Container parentClassName="py-16">
+    <Container parentClassName="py-16 overflow-hidden">
+      <img
+        src="https://myva360.com/wp-content/uploads/2022/12/brush-stroke-72.png.webp"
+        className="absolute -right-32 top-[40%]"
+      />
       <div className="text-center px-32">
         <SectionTitle className="font-extrabold">How It Works</SectionTitle>
         <div className="mt-4">

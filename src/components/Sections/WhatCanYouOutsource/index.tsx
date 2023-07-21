@@ -53,6 +53,10 @@ export const WhatCanYouOutSource = () => {
   return (
     <Container parentClassName="py-32 overflow-hidden">
       {/* <LineDownward className="absolute w-full h-full inset-0 top-48" /> */}
+      <img
+        src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-28.png.webp"
+        className="absolute left-0 top-96"
+      />
       <div className="relative z-40">
         <div className="sm:px-16 text-center">
           <SectionTitle className="font-extrabold">
@@ -63,8 +67,8 @@ export const WhatCanYouOutSource = () => {
             We will handle all of your time-consuming tasks and correspondence.
           </div>
         </div>
-        <div className="mt-10">
-          <div className="grid gap-5 grid-cols-2">
+        <div className="mt-10 px-0 sm:px-6 md:px-12 lg:px-20">
+          <div className="grid gap-5 grid-cols-2 ">
             {LISTS.map(({ Icon, title, description }) => (
               <div className="rounded-xl p-6 shadow-md bg-white group hover:bg-secondary transition-colors duration-300">
                 <div className="flex items-center gap-4">

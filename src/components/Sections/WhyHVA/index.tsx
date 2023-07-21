@@ -6,8 +6,14 @@ export const WhyHVAIsDifferent = () => {
   return (
     <Container parentClassName="py-32 overflow-hidden">
       {/* <CurveLineLeftToRight className="absolute -z-10 left-0 bottom-0 w-full" /> */}
+      <img
+        src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-32.png.webp"
+        className="absolute inset-0 -z-10"
+      />
       <div className="text-center px-16 md:px-32">
-        <SectionTitle className="font-extrabold">Why Choose Us?</SectionTitle>
+        <SectionTitle className="font-extrabold">
+          Why <span className="text-secondary">Choose Us?</span>
+        </SectionTitle>
         <div className="mt-6">
           We are dedicated to helping our clients live better lives by providing
           them with personalized support. All of our virtual assistants go
@@ -23,29 +29,29 @@ export const WhyHVAIsDifferent = () => {
             </div>
             <div className="flex flex-col gap-4 p-6 flex-1">
               <div className="flex gap-3">
-                <CheckIcon className="text-secondary" />
+                <CheckIcon className="text-primary" />
                 <span className="font-bold">No paperwork cost</span>
               </div>
               <div className="flex gap-3">
-                <CheckIcon className="text-secondary" />
+                <CheckIcon className="text-primary" />
                 <span className="font-bold">No taxes and fees</span>
               </div>
               <div className="flex gap-3">
-                <CheckIcon className="text-secondary" />
+                <CheckIcon className="text-primary" />
                 <span className="font-bold">No office space cost</span>
               </div>
               <div className="flex gap-3">
-                <CheckIcon className="text-secondary" />
+                <CheckIcon className="text-primary" />
                 <span className="font-bold">No paid time off</span>
               </div>
               <div className="flex gap-3">
-                <CheckIcon className="text-secondary" />
+                <CheckIcon className="text-primary" />
                 <span className="font-bold">No hidden fees</span>
               </div>
             </div>
-            <div className="p-6 bg-secondary rounded-b-lg">
-              <div className="text-white/80">Total cost annually</div>
-              <div className="text-white font-bold text-2xl">$450.00</div>
+            <div className="p-6 bg-primary/30 rounded-b-lg">
+              <div className="text-black/80">Total cost annually</div>
+              <div className="text-black font-bold text-2xl">$450.00</div>
             </div>
           </div>
         </div>

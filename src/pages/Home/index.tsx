@@ -49,10 +49,9 @@ export const HomePage = () => {
     <>
       <Helmet>
         <title>Hello Virtual Agent | Home</title>
-        <meta about="og:url" content="hello word" />
       </Helmet>
       <section
-        className="relative"
+        className="relative overflow-hidden"
         ref={ref as any}
         style={{
           // background: `url(${BlobScatter}), linear-gradient(95deg, rgba(255,204,0,0.3533788515406162) 30%, rgba(255,96,0,0.3785889355742297) 100%)`,
@@ -63,6 +62,10 @@ export const HomePage = () => {
           backgroundAttachment: 'fixed',
         }}
       >
+        <img
+          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-31.png.webp"
+          className="absolute -right-96 top-32 lg:top-0"
+        />
         <div className="h-[85dvh] flex items-center w-full flex-col">
           <div className="px-24 lg:px-72 my-auto w-full">
             <div className="flex items-center">
@@ -91,21 +94,21 @@ export const HomePage = () => {
                 </div>
               </div>
               <div className="flex-1">
-                <img src={Banner} />
+                <img src={Banner} className="relative z-10" />
               </div>
             </div>
           </div>
         </div>
       </section>
       <WhatCanYouOutSource />
-      <div className="w-full py-8 min-h-52 bg-secondary/90 sm:py-14">
+      <div className="w-full py-8 min-h-52 bg-primary/30 sm:py-14">
         <div className="main-wrapper">
           <div className="flex items-center justify-between h-full p-6 flex-col sm:flex-row sm:px-20">
-            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold text-white/90">
+            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold text-black/90">
               Do you want to simplify and automate your business with
               intelligent digital tools and experienced Virtual Assistants?
             </div>
-            <button className="py-2 px-4 text-base sm:py-4 sm:px-10 mt-4 sm:mt-0 rounded-md bg-primary text-black font-bold tracking-wide min-w-fit shadow-md">
+            <button className="py-2 px-4 text-base sm:py-4 sm:px-10 mt-4 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit shadow-md">
               LET'S CHAT
             </button>
           </div>
@@ -115,14 +118,14 @@ export const HomePage = () => {
       <WhoWeServe />
       <WhyHVAIsDifferent />
       <HearFromClients />
-      <div className="w-full py-8 min-h-52 bg-secondary/90 sm:py-14">
+      <div className="w-full py-8 min-h-52 bg-primary/30 sm:py-14">
         <div className="main-wrapper">
           <div className="flex items-center justify-between h-full p-6 flex-col sm:flex-row sm:px-20">
-            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold text-white">
+            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold text-black">
               We’re different because we’re an end-to-end service that will hold
               your hand every step of the way.
             </div>
-            <button className="py-2 px-4 text-base sm:py-4 sm:px-10 mt-4 sm:mt-0 rounded-md bg-primary text-black font-bold tracking-wide min-w-fit">
+            <button className="py-2 px-4 text-base sm:py-4 sm:px-10 mt-4 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit">
               LET'S CHAT
             </button>
           </div>

@@ -4,3 +4,4 @@ export * from './WhoWeServe';
 export * from './WhyHVA';
 export * from './HearFromClients';
 export * from './PricingOptions';
+export * from './OurTeam';

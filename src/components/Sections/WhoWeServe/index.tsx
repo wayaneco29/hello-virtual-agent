@@ -4,13 +4,17 @@ import Business from 'assets/images/business.webp';
 
 export const WhoWeServe = () => {
   return (
-    <Container parentClassName="py-16 bg-secondary/90">
+    <Container parentClassName="py-16 bg-primary/40">
+      <img
+        src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-31.png.webp"
+        className="absolute inset-0"
+      />
       <div className="flex gap-6">
         <div className="max-w-[400px]">
-          <SectionTitle className="font-extrabold text-white">
+          <SectionTitle className="font-extrabold text-black">
             Who We Serve
           </SectionTitle>
-          <div className="mt-4 text-white/90 font-bold">
+          <div className="mt-4 text-black/90 font-bold">
             At <span className="font-bold">Hello Virtual Agent</span>, we are
             passionate about helping you run your business without the burden of
             repetitive tasks. Our virtual assistants have experience using

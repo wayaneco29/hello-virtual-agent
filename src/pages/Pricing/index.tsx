@@ -31,7 +31,7 @@ export const PricingPage = () => {
     <>
       <section
         ref={ref as any}
-        className="relative min-h-[85dvh] flex items-center w-full flex-col"
+        className="relative min-h-[85dvh] flex items-center w-full flex-col overflow-hidden"
         style={
           {
             // background: `url(${BlobScene})`,
@@ -40,6 +40,10 @@ export const PricingPage = () => {
           }
         }
       >
+        <img
+          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-26.png.webp"
+          className="absolute -right-72 top-20 -z-10"
+        />
         <div className="px-16 my-auto mt-32 w-full sm:px-24 md:px-72">
           <div className="flex items-center">
             <div className="flex-1">
@@ -106,7 +110,11 @@ export const PricingPage = () => {
           </div>
         </div>
       </section>
-      <section className="relative bg-black/10">
+      <section className="relative bg-primary/30 overflow-hidden">
+        <img
+          src="https://myva360.com/wp-content/uploads/2022/12/brush-stroke-64-1024x886.png.webp"
+          className="absolute left-0 top-72 -z-10"
+        />
         {/* <svg
           id="visual"
           viewBox="0 0 1400 900"
@@ -206,8 +214,8 @@ export const PricingPage = () => {
             <div className="flex-1"></div>
             <div className="flex-1"></div>
           </div> */}
-          <div className="flex gap-6 justify-between mt-20">
-            <div className="w-[500px] flex flex-col">
+          <div className="flex gap-6 mt-20 justify-center">
+            <div className="w-[400px] flex flex-col">
               <div className="p-6 border shadow-md rounded-md bg-white">
                 <div className="mb-4 border-b">
                   <div className="font-bold text-2xl mb-2 text-primary">
@@ -264,7 +272,7 @@ export const PricingPage = () => {
                 </button>
               </div>
             </div>
-            <div className="w-[500px] flex flex-col relative">
+            <div className="w-[400px] flex flex-col relative">
               <div className="absolute w-full rounded-t-xl bg-secondary p-4 -top-[45px]">
                 <div className="text-center font-bold text-white">
                   MOST POPULAR!
@@ -324,7 +332,7 @@ export const PricingPage = () => {
                 </button>
               </div>
             </div>
-            <div className="w-[500px] flex flex-col">
+            <div className="w-[400px] flex flex-col">
               <div className="p-6 rounded-md shadow-md border bg-white">
                 <div className="mb-4 border-b">
                   <div className="font-bold text-xl mb-2 text-primary">

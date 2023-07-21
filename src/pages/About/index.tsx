@@ -1,5 +1,13 @@
 import { useRef, useEffect } from 'react';
-import { Button, Container, CurveSVG, OurTeam, SectionTitle } from 'components';
+import {
+  Button,
+  Container,
+  CurveSVG,
+  OurTeam,
+  SectionTitle,
+  PricingStartsAt,
+  BookACall,
+} from 'components';
 
 import AboutTeam from 'assets/images/AboutTeam.svg';
 import Goals from 'assets/images/Goals.svg';
@@ -66,8 +74,8 @@ export const AboutPage = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="w-full">
+      {/* <section>
+        <div className="w-full mt-32">
           <div className="text-center">
             <SectionTitle className="font-extrabold text-secondary">
               Motivation
@@ -75,10 +83,32 @@ export const AboutPage = () => {
           </div>
         </div>
         <div className="flex mt-16">
-          <div className="flex-1 p-56 bg-secondary/40 rounded-tr-md rounded-br-md"></div>
-          <div className="flex-1 p-56 "></div>
+          <div className="flex-1 pl-56 pr-10 py-16">
+            <div className="rounded-md shadow-md p-7 h-full">
+              <div className="text-secondary font-bold text-2xl">Goal</div>
+              <div className="mt-6 font-bold">
+                Our main goal is to provide a result-driven solution based on
+                each person’s experiences and challenges. This way we can
+                connect outstanding VAs to the world and make them more
+                productive and successful. We accomplish this by helping clients
+                to select the most appropriate services we offer to meet and
+                exceed expectations.
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 pr-56 pl-10 py-16">
+            <div className="rounded-md shadow-md p-7 h-full">
+              <div className="text-secondary font-bold text-2xl">Core</div>
+              <div className="mt-6 font-bold">
+                Our core is to ensure Client satisfaction by providing
+                professional agents and competitive rates and packaged solutions
+                that will fit their business needs and at the same time their
+                budget.
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </section> */}
       <OurTeam />
       <section className="bg-primary/40">
         <div className="px-60 ">
@@ -113,33 +143,8 @@ export const AboutPage = () => {
           </div>
         </div>
       </section>
-      <Container parentClassName="overflow-hidden" subParentClassName="py-32">
-        <img
-          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-56.png.webp"
-          className="absolute -right-72 w-[70%] top-24"
-        />
-        <SectionTitle className="text-center">
-          <span className="font-bold text-secondary">
-            Hire a Virtual Assistant
-          </span>{' '}
-          without the risk
-        </SectionTitle>
-        <div className="px-20 my-10 text-center">
-          For over 10 years, Hello Virtual Agent has been training, recruiting,
-          and managing Virtual Assistants. Our recruitment process guarantees
-          that only the most qualified Virtual Assistants are recommended for
-          employment.
-        </div>
-        <div className="px-20 my-10 text-center">
-          If your business is ready to grow wings, book a Discovery Call with us
-          today so we can find you an Agent.
-        </div>
-        <div className="text-center">
-          <button className="py-4 px-10 font-bold text-white bg-secondary rounded-md shadow-md">
-            BOOK A CALL NOW!
-          </button>
-        </div>
-      </Container>
+      <PricingStartsAt />
+      <BookACall />
     </div>
   );
 };

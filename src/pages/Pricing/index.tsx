@@ -1,5 +1,11 @@
 import { useRef, useEffect } from 'react';
-import { Button, Container, SectionTitle, PricingStartsAt } from 'components';
+import {
+  Button,
+  Container,
+  SectionTitle,
+  PricingStartsAt,
+  BookACall,
+} from 'components';
 
 import { CheckIcon } from 'components/SVG';
 
@@ -391,6 +397,7 @@ export const PricingPage = () => {
         </div>
       </section>
       <PricingStartsAt />
+      <BookACall />
     </>
   );
 };

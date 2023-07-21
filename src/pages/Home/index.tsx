@@ -13,6 +13,7 @@ import {
   WhyHVAIsDifferent,
   HearFromClients,
   PricingStartsAt,
+  BookACall,
 } from 'components';
 
 import BackgroundImage from 'assets/icons/svg/asset.svg';
@@ -132,6 +133,7 @@ export const HomePage = () => {
         </div>
       </div>
       <PricingStartsAt />
+      <BookACall />
     </>
   );
 };

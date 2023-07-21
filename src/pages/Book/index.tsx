@@ -1,14 +1,29 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { InlineWidget, useCalendlyEventListener } from 'react-calendly';
 
-import { Button, Container, CurveSVG, SectionTitle } from 'components';
+import { Container, SectionTitle } from 'components';
 
-import VA1 from 'assets/images/va-1.webp';
-import Facebook from 'assets/icons/svg/facebook.svg';
-import Twitter from 'assets/icons/svg/twitter.svg';
-import Instagram from 'assets/icons/svg/instagram.svg';
+import ConnectedWorld from 'assets/images/ConnectedWorld.svg';
 
 export const BookPage = () => {
+  const ref = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (ref.current) {
+        const navbar = document.getElementById('navbar');
+
+        const isLessThan50 =
+          (ref.current as any).getBoundingClientRect().top < 0;
+
+        if (isLessThan50) {
+          navbar?.classList.add('nav-offset');
+        } else {
+          navbar?.classList.remove('nav-offset');
+        }
+      }
+    });
+  }, []);
   const [calendarHeight, setCalendarHeight] = useState('1010px');
   useCalendlyEventListener({
     onEventTypeViewed() {
@@ -20,14 +35,18 @@ export const BookPage = () => {
   });
 
   return (
-    <>
+    <div ref={ref as any}>
       <Container
-        parentClassName="pt-[90px] bg-greeny-gray"
+        parentClassName="pt-[90px] overflow-hidden"
         subParentClassName="pt-16 "
       >
+        <img
+          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-26.png.webp"
+          className="absolute -z-10 left-0 top-40 rotate-[60deg]"
+        />
         <div className="flex gap-16">
           <div className="flex-1 min-h-[300px]">
-            <div className="bg-white p-4 rounded-2xl">
+            <div className="bg-white p-4 rounded-2xl shadow-md relative z-10">
               <InlineWidget
                 url="https://calendly.com/wayaneco29/free-consultation"
                 styles={{
@@ -37,32 +56,27 @@ export const BookPage = () => {
             </div>
           </div>
           <div className="flex-1">
-            <SectionTitle>
+            <SectionTitle className="font-extrabold">
               Book Your{' '}
-              <span className="font-bold text-primary">
-                Free Business Consultation
-              </span>
+              <span className="text-secondary">Free Business Consultation</span>
             </SectionTitle>
-            <img src={VA1} className="w-[520px] my-10" />
-            <div className="text-h2 font-bold">Connect with us</div>
-            <div className="flex gap-4 mt-4">
-              <div className="p-2 rounded-full bg-primary/80 cursor-pointer transition-colors hover:bg-primary">
-                <img src={Facebook} className="w-6 h-6" />
-              </div>
-              <div className="p-2 rounded-full bg-primary/80 cursor-pointer transition-colors hover:bg-primary">
-                <img src={Twitter} className="w-6 h-6" />
-              </div>
-              <div className="p-2 rounded-full bg-primary/80 cursor-pointer transition-colors hover:bg-primary">
-                <img src={Instagram} className="w-6 h-6" />
-              </div>
-            </div>
+            <img src={ConnectedWorld} className="w-[520px] my-10" />
           </div>
         </div>
-        <CurveSVG color="fill-secondary" />
-      </Container>{' '}
-      <Container parentClassName="bg-secondary" subParentClassName="pb-16">
+      </Container>
+      <div className="relative h-[100px] bg-primary/40">
+        <div className="absolute w-full h-full bg-primary/40 -top-[100px]" />
+      </div>
+      <Container
+        parentClassName="bg-primary/40 overflow-hidden"
+        subParentClassName="pb-32"
+      >
+        <img
+          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-56.png.webp"
+          className="absolute -right-72 w-[70%] top-24"
+        />
         <SectionTitle className="text-center">
-          <span className="font-bold text-primary">
+          <span className="font-bold text-secondary">
             Hire a Virtual Assistant
           </span>{' '}
           without the risk
@@ -78,15 +92,11 @@ export const BookPage = () => {
           today so we can find you an Agent.
         </div>
         <div className="text-center">
-          <Button
-            variant="contained"
-            rounded
-            className="py-4 px-10 font-bold text-white"
-          >
+          <button className="py-4 px-10 font-bold text-white bg-secondary rounded-md shadow-md">
             BOOK A CALL NOW!
-          </Button>
+          </button>
         </div>
       </Container>
-    </>
+    </div>
   );
 };

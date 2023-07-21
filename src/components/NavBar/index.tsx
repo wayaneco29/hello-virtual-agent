@@ -25,10 +25,10 @@ const NAV_LIST = [
     path: ROUTE_SERVICES,
     name: 'SERVICES',
   },
-  {
-    path: ROUTE_REVIEWS,
-    name: 'REVIEWS',
-  },
+  // {
+  //   path: ROUTE_REVIEWS,
+  //   name: 'REVIEWS',
+  // },
   // {
   //   path: ROUTE_FAQS,
   //   name: 'FAQs',

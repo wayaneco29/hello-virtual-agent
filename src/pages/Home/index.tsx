@@ -22,6 +22,8 @@ import HeroImage from 'assets/images/hero.webp';
 import classNames from 'classnames';
 
 import { Case, Lamp } from 'components/SVG';
+import Banner from 'assets/images/Team.svg';
+import BlobScatter from 'assets/images/BlobScatter.svg';
 
 export const HomePage = () => {
   const ref = useRef();
@@ -32,7 +34,7 @@ export const HomePage = () => {
         const navbar = document.getElementById('navbar');
 
         const isLessThan50 =
-          (ref.current as any).getBoundingClientRect().top < -50;
+          (ref.current as any).getBoundingClientRect().top < 0;
 
         if (isLessThan50) {
           navbar?.classList.add('nav-offset');
@@ -49,44 +51,61 @@ export const HomePage = () => {
         <title>Hello Virtual Agent | Home</title>
         <meta about="og:url" content="hello word" />
       </Helmet>
-      <section className="relative" ref={ref as any}>
-        <div className="h-[50vh] lg:h-[85dvh] bg-gray-900">
-          <img
-            src={HeroImage}
-            alt="banner"
-            className="absolute object-cover filter brightness-50 blur-sm h-full w-full"
-          />
-          <div className="flex justify-center items-center relative h-full md:h-[80%]">
-            <div className="text-2xl px-6 sm:px-0 absolute text-white text-center top-[30%] sm:text-[3.5rem] sm:leading-[4.5rem] lg:top-56">
-              <span className="font-bold">
-                Outsource to{' '}
-                <span className="text-primary">
-                  Virtual <br />
-                  Assistants
-                </span>
-              </span>{' '}
-              in the Philippines
+      <section
+        className="relative"
+        ref={ref as any}
+        style={{
+          // background: `url(${BlobScatter}), linear-gradient(95deg, rgba(255,204,0,0.3533788515406162) 30%, rgba(255,96,0,0.3785889355742297) 100%)`,
+          background:
+            'linear-gradient(95deg, rgba(255,204,0,0.3533788515406162) 30%, rgba(255,96,0,0.3785889355742297) 100%)',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <div className="h-[85dvh] flex items-center w-full flex-col">
+          <div className="px-24 lg:px-72 my-auto w-full">
+            <div className="flex items-center">
+              <div className="flex-1">
+                <div>
+                  <div className="text-base font-bold mb-2">
+                    <span className="text-secondary ">Hello Virtual Agent</span>{' '}
+                    - <span>Virtual Assistant Agency</span>
+                  </div>
+                  <div className="font-extrabold text-h1">
+                    <div>
+                      Outsource <span className="text-secondary">Virtual</span>
+                    </div>
+                    <div>
+                      <span className="text-secondary">Assistants</span> in the
+                      Philippines
+                    </div>
+                  </div>
+                  <div className="my-4 text-black/50 font-bold">
+                    Free up your time for things that are important to you, and
+                    pay only for the hours you need, at a low cost.
+                  </div>
+                  <button className="px-10 py-3 rounded-md shadow bg-secondary text-white font-bold mt-7">
+                    GET STARTED
+                  </button>
+                </div>
+              </div>
+              <div className="flex-1">
+                <img src={Banner} />
+              </div>
             </div>
-            <Button
-              className={classNames(
-                'text-black font-bold absolute py-2 px-4 bg-secondary text-sm tracking-wide rounded-full transition-all duration-500 bottom-[20%] border-solid border-2 border-secondary',
-                'hover:text-white hover:bg-primary hover:border-primary lg:bottom-24 sm:py-3 sm:px-6 sm:text-lg'
-              )}
-            >
-              LET'S CHAT
-            </Button>
           </div>
         </div>
       </section>
       <WhatCanYouOutSource />
-      <div className="w-full py-8 min-h-52 bg-secondary sm:py-14">
+      <div className="w-full py-8 min-h-52 bg-secondary/90 sm:py-14">
         <div className="main-wrapper">
           <div className="flex items-center justify-between h-full p-6 flex-col sm:flex-row sm:px-20">
-            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold">
+            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold text-white/90">
               Do you want to simplify and automate your business with
               intelligent digital tools and experienced Virtual Assistants?
             </div>
-            <button className="py-2 px-4 text-base sm:py-4 sm:px-7 mt-4 sm:mt-0 rounded-full bg-primary text-white font-bold tracking-wide min-w-fit">
+            <button className="py-2 px-4 text-base sm:py-4 sm:px-10 mt-4 sm:mt-0 rounded-md bg-primary text-black font-bold tracking-wide min-w-fit shadow-md">
               LET'S CHAT
             </button>
           </div>
@@ -96,14 +115,14 @@ export const HomePage = () => {
       <WhoWeServe />
       <WhyHVAIsDifferent />
       <HearFromClients />
-      <div className="w-full py-8 min-h-52 bg-secondary sm:py-14">
+      <div className="w-full py-8 min-h-52 bg-secondary/90 sm:py-14">
         <div className="main-wrapper">
           <div className="flex items-center justify-between h-full p-6 flex-col sm:flex-row sm:px-20">
-            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold">
-              We’re different because we’re an end-to-end service <br /> that
-              will hold your hand every step of the way.
+            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold text-white">
+              We’re different because we’re an end-to-end service that will hold
+              your hand every step of the way.
             </div>
-            <button className="py-2 px-4 text-base sm:py-4 sm:px-7 mt-4 sm:mt-0 rounded-full bg-primary text-white font-bold tracking-wide min-w-fit">
+            <button className="py-2 px-4 text-base sm:py-4 sm:px-10 mt-4 sm:mt-0 rounded-md bg-primary text-black font-bold tracking-wide min-w-fit">
               LET'S CHAT
             </button>
           </div>

@@ -5,3 +5,4 @@ export const ROUTE_SERVICES = '/services';
 export const ROUTE_REVIEWS = '/reviews';
 export const ROUTE_FAQS = '/faqs';
 export const ROUTE_CONTACT = '/contact-us';
+export const ROUTE_PRICING = '/pricing';

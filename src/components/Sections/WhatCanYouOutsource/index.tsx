@@ -52,12 +52,12 @@ const LISTS = [
 export const WhatCanYouOutSource = () => {
   return (
     <Container parentClassName="py-32 overflow-hidden">
-      <LineDownward className="absolute w-full h-full inset-0 top-48" />
+      {/* <LineDownward className="absolute w-full h-full inset-0 top-48" /> */}
       <div className="relative z-40">
         <div className="sm:px-16 text-center">
           <SectionTitle className="font-extrabold">
             What Can You Outsource to a{' '}
-            <span className="text-primary">Virtual Assistant?</span>
+            <span className="text-secondary">Virtual Assistant?</span>
           </SectionTitle>
           <div className="mt-4">
             We will handle all of your time-consuming tasks and correspondence.
@@ -66,10 +66,10 @@ export const WhatCanYouOutSource = () => {
         <div className="mt-10">
           <div className="grid gap-5 grid-cols-2">
             {LISTS.map(({ Icon, title, description }) => (
-              <div className="rounded-xl p-6 shadow-md bg-white group hover:bg-primary transition-colors duration-300">
+              <div className="rounded-xl p-6 shadow-md bg-white group hover:bg-secondary transition-colors duration-300">
                 <div className="flex items-center gap-4">
-                  <Icon className="text-primary w-8 h-8 group-hover:text-white" />
-                  <div className="text-primary font-[900] text-xl group-hover:text-white">
+                  <Icon className="text-secondary w-8 h-8 group-hover:text-white" />
+                  <div className="text-secondary font-[900] text-xl group-hover:text-white">
                     {title}
                   </div>
                 </div>

@@ -179,7 +179,7 @@ export const ServicesPage = () => {
         </div>
         <div className="flex gap-6 justify-between mt-20">
           <div className="flex-1 flex flex-col">
-            <div className="p-6 border-2 border-primary border-solid rounded-2xl">
+            <div className="p-6 border shadow-md rounded-2xl">
               <div className="font-bold text-xl mb-2">STARTER</div>
               <div className="mb-4">General Virtual Assistant</div>
               <div className="mb-6">
@@ -189,14 +189,7 @@ export const ServicesPage = () => {
                 For businesses that already have systems & processes ready to
                 hire a virtual assistant (VA)
               </div>
-              <Button
-                variant="outline"
-                rounded
-                className="w-full font-bold mb-6"
-              >
-                GET STARTED
-              </Button>
-              <div>
+              <div className="mb-6">
                 <ul className="list-none text-left flex flex-col gap-2">
                   <li className="flex items-start">
                     <img src={Check} className="w-6 mb-[1px] mr-[3px]" />
@@ -230,13 +223,16 @@ export const ServicesPage = () => {
                   </li>
                 </ul>
               </div>
+              <Button variant="outline" rounded className="w-full font-bold">
+                GET STARTED
+              </Button>
             </div>
           </div>
           <div className="flex-1 flex flex-col relative">
-            <div className="absolute w-full rounded-t-xl bg-secondary p-4 -top-[45px] border-t-2 border-l-2 border-r-2 border-b-0 border-solid border-primary">
+            <div className="absolute w-full rounded-t-xl bg-secondary p-4 -top-[45px]">
               <div className="text-center font-bold">MOST POPULAR!</div>
             </div>
-            <div className="p-6 border-2 border-primary border-solid rounded-2xl">
+            <div className="p-6 border rounded-2xl shadow-md">
               <div className="font-bold text-xl mb-2">PREMIUM</div>
               <div className="mb-4">E-Commerce Admin VA</div>
               <div className="mb-6">
@@ -246,14 +242,7 @@ export const ServicesPage = () => {
                 For businesses that already have systems & processes ready to
                 hire a virtual assistant (VA)
               </div>
-              <Button
-                variant="contained"
-                rounded
-                className="w-full font-bold mb-6 text-white"
-              >
-                GET STARTED
-              </Button>
-              <div>
+              <div className="mb-6">
                 <ul className="list-none text-left flex flex-col gap-2">
                   <li className="flex items-start">
                     <img src={Check} className="w-6 mb-[1px] mr-[3px]" />
@@ -287,11 +276,18 @@ export const ServicesPage = () => {
                   </li>
                 </ul>
               </div>
+              <Button
+                variant="contained"
+                rounded
+                className="w-full font-bold text-white border border-solid border-primary"
+              >
+                GET STARTED
+              </Button>
             </div>
           </div>
           <div className="flex-1 flex flex-col">
             {' '}
-            <div className="p-6 border-2 border-primary border-solid rounded-2xl">
+            <div className="p-6 rounded-2xl shadow-md border">
               <div className="font-bold text-xl mb-2">PROFESSIONAL</div>
               <div className="mb-4">Financial Admin VA</div>
               <div className="mb-6">
@@ -301,14 +297,7 @@ export const ServicesPage = () => {
                 For businesses that already have systems & processes ready to
                 hire a virtual assistant (VA)
               </div>
-              <Button
-                variant="outline"
-                rounded
-                className="w-full font-bold mb-6"
-              >
-                GET STARTED
-              </Button>
-              <div>
+              <div className="mb-6">
                 <ul className="list-none text-left flex flex-col gap-2">
                   <li className="flex items-start">
                     <img src={Check} className="w-6 mb-[1px] mr-[3px]" />
@@ -342,6 +331,9 @@ export const ServicesPage = () => {
                   </li>
                 </ul>
               </div>
+              <Button variant="outline" rounded className="w-full font-bold">
+                GET STARTED
+              </Button>
             </div>
           </div>
         </div>

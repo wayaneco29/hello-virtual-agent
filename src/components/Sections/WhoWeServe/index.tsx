@@ -4,11 +4,13 @@ import Business from 'assets/images/business.webp';
 
 export const WhoWeServe = () => {
   return (
-    <Container parentClassName="py-16 bg-secondary">
+    <Container parentClassName="py-16 bg-secondary/90">
       <div className="flex gap-6">
         <div className="max-w-[400px]">
-          <SectionTitle className="font-extrabold">Who We Serve</SectionTitle>
-          <div className="mt-4">
+          <SectionTitle className="font-extrabold text-white">
+            Who We Serve
+          </SectionTitle>
+          <div className="mt-4 text-white/90 font-bold">
             At <span className="font-bold">Hello Virtual Agent</span>, we are
             passionate about helping you run your business without the burden of
             repetitive tasks. Our virtual assistants have experience using

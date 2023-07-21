@@ -5,7 +5,7 @@ import { CheckIcon, PlusIcon, CurveLineLeftToRight } from 'components/SVG';
 export const WhyHVAIsDifferent = () => {
   return (
     <Container parentClassName="py-32 overflow-hidden">
-      <CurveLineLeftToRight className="absolute -z-10 left-0 bottom-0 w-full" />
+      {/* <CurveLineLeftToRight className="absolute -z-10 left-0 bottom-0 w-full" /> */}
       <div className="text-center px-16 md:px-32">
         <SectionTitle className="font-extrabold">Why Choose Us?</SectionTitle>
         <div className="mt-6">
@@ -14,8 +14,8 @@ export const WhyHVAIsDifferent = () => {
           through rigorous background and experience checks and training.
         </div>
       </div>
-      <div className="flex gap-10 mt-10 mx-auto w-full h-full sm:w-2/3">
-        <div className="flex-1">
+      <div className="flex gap-5 mt-10 mx-auto w-full h-full justify-center sm:gap-10 md:gap-16">
+        <div className="w-[390px]">
           <div className="shadow-lg rounded-lg bg-white h-full flex flex-col">
             <div className="border-b p-6 border-solid border-gray-200">
               <div className="font-bold text-3xl">HVA Assistant</div>
@@ -44,12 +44,12 @@ export const WhyHVAIsDifferent = () => {
               </div>
             </div>
             <div className="p-6 bg-secondary rounded-b-lg">
-              <div className="text-black/50">Total cost annually</div>
-              <div className="text-black font-bold text-2xl">$450.00</div>
+              <div className="text-white/80">Total cost annually</div>
+              <div className="text-white font-bold text-2xl">$450.00</div>
             </div>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="w-[390px]">
           <div className="shadow-lg rounded-lg bg-white h-full">
             <div className="border-b p-6 border-solid border-gray-200">
               <div className="font-bold text-3xl">Standard Employee</div>
@@ -78,7 +78,7 @@ export const WhyHVAIsDifferent = () => {
               </div>
             </div>
             <div className="p-6 bg-red-400 rounded-b-lg">
-              <div className="text-white/50">Total cost annually</div>
+              <div className="text-white/80">Total cost annually</div>
               <div className="text-white font-bold text-2xl">$980.00</div>
             </div>
           </div>

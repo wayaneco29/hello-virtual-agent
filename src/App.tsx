@@ -2,9 +2,21 @@ import { Fragment } from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import { NavBar, Footer } from 'components';
-import { HomePage, AboutPage, ServicesPage, BookPage } from 'pages';
+import {
+  HomePage,
+  AboutPage,
+  ServicesPage,
+  BookPage,
+  PricingPage,
+} from 'pages';
 
-import { ROUTE_ABOUT, ROUTE_BOOK, ROUTE_HOME, ROUTE_SERVICES } from 'constants';
+import {
+  ROUTE_ABOUT,
+  ROUTE_BOOK,
+  ROUTE_HOME,
+  ROUTE_SERVICES,
+  ROUTE_PRICING,
+} from 'constants';
 
 import 'global.scss';
 
@@ -30,6 +42,12 @@ const App = () => {
             index
             path={ROUTE_SERVICES}
             element={<ServicesPage />}
+            errorElement={<div>Error...</div>}
+          />
+          <Route
+            index
+            path={ROUTE_PRICING}
+            element={<PricingPage />}
             errorElement={<div>Error...</div>}
           />
           <Route

@@ -11,6 +11,7 @@ import {
   ROUTE_FAQS,
   ROUTE_REVIEWS,
   ROUTE_SERVICES,
+  ROUTE_PRICING,
 } from 'constants';
 
 import './styles.scss';
@@ -28,9 +29,13 @@ const NAV_LIST = [
     path: ROUTE_REVIEWS,
     name: 'REVIEWS',
   },
+  // {
+  //   path: ROUTE_FAQS,
+  //   name: 'FAQs',
+  // },
   {
-    path: ROUTE_FAQS,
-    name: 'FAQs',
+    path: ROUTE_PRICING,
+    name: 'Pricing',
   },
   {
     path: ROUTE_CONTACT,
@@ -42,11 +47,11 @@ export const NavBar = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
-  const navStyles = useMemo(() => {
-    if (pathname !== '/') {
-      return 'nav-offset';
-    }
-  }, [pathname]);
+  // const navStyles = useMemo(() => {
+  // if (pathname !== '/') {
+  //   return 'nav-offset';
+  // }
+  // }, [pathname]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,11 +61,11 @@ export const NavBar = () => {
     <nav
       id="navbar"
       className={classNames(
-        'w-full h-[60px] sm:h-[80px] bg-transparent flex items-center justify-between nav-wrapper fixed z-[9999] transition-all duration-200 top-0',
-        navStyles
+        'w-full h-[60px] sm:h-[80px] bg-transparent flex items-center justify-between nav-wrapper fixed z-[9999] transition-all duration-200 top-0'
+        // navStyles
       )}
     >
-      <div className="nav-logo font-bold text-xl sm:text-3xl transition-all text-white">
+      <div className="nav-logo font-bold text-xl sm:text-3xl transition-all text-black">
         <img
           src={HVALogo}
           alt="HVA Logo"
@@ -69,7 +74,7 @@ export const NavBar = () => {
         />
       </div>
       <div className="hidden sm:block">
-        <div className="flex gap-4 uppercase text-sm font-semibold transition-all items-center text-white">
+        <div className="flex gap-4 uppercase text-sm font-semibold transition-all items-center text-black">
           {NAV_LIST.map(item => (
             <div
               className={classNames(
@@ -82,7 +87,7 @@ export const NavBar = () => {
             </div>
           ))}
           <div
-            className="rounded-full min-w-fit px-6 py-2 bg-primary text-sm cursor-pointer text-white!"
+            className="rounded-md shadow-md min-w-fit px-6 py-2 bg-secondary text-sm cursor-pointer text-white"
             onClick={() => navigate(ROUTE_BOOK)}
           >
             BOOK NOW!

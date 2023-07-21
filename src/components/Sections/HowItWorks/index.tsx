@@ -8,7 +8,7 @@ export const HowItWorks = () => {
         <SectionTitle className="font-extrabold">How It Works</SectionTitle>
         <div className="mt-4">
           Work smarter with{' '}
-          <span className="text-primary font-bold">Hello Virtual Agent</span>.
+          <span className="text-secondary font-bold">Hello Virtual Agent</span>.
           We believe in cultivating great relationships with our clients.
         </div>
       </div>
@@ -16,18 +16,18 @@ export const HowItWorks = () => {
         <div className="min-h-screen py-6 flex flex-col sm:py-12">
           <div className="py-3 sm:w-2/3 sm:mx-auto w-full px-2 sm:px-0">
             <div className="relative text-black antialiased text-sm font-semibold">
-              <div className="hidden sm:block w-1 bg-primary absolute h-full left-1/2 transform -translate-x-1/2" />
+              <div className="hidden sm:block w-1 bg-secondary absolute h-full left-1/2 transform -translate-x-1/2" />
               <div className="mt-6">
                 <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-start w-full mx-auto items-center">
-                    <div className="w-full sm:w-1/2 sm:pr-8">
+                  <div className="flex justify-end w-full mx-auto items-center">
+                    <div className="w-full sm:w-1/2 sm:pl-8">
                       <div className="p-6 bg-white rounded relative shadow-lg z-10">
-                        <div className="absolute text-[10rem] font-extrabold text-primary opacity-20 h-[10rem] flex items-center top-0 -left-16 -z-10">
+                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -right-16 -z-10">
                           1
                         </div>
                         <div className="flex flex-col gap-4">
-                          <User className="text-primary w-12 h-12 mx-auto" />
-                          <div className="text-xl font-extrabold text-center text-primary">
+                          <User className="text-secondary w-12 h-12 mx-auto" />
+                          <div className="text-xl font-extrabold text-center text-secondary">
                             Discovery Call
                           </div>
                           <div className="text-center">
@@ -40,22 +40,22 @@ export const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-primary border-primary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>
               </div>
               <div className="mt-6">
                 <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-end w-full mx-auto items-center">
-                    <div className="w-full sm:w-1/2 sm:pl-8">
+                  <div className="flex justify-start w-full mx-auto items-center">
+                    <div className="w-full sm:w-1/2 sm:pr-8">
                       <div className="p-6 bg-white rounded relative z-10 shadow-lg">
-                        <div className="absolute text-[10rem] font-extrabold text-primary opacity-20 h-[10rem] flex items-center top-0 -right-20 -z-10">
+                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -left-20 -z-10">
                           2
                         </div>
                         <div className="flex flex-col gap-4">
-                          <Case className="text-primary w-12 h-12 mx-auto" />
-                          <div className="text-xl font-extrabold text-center text-primary">
+                          <Case className="text-secondary w-12 h-12 mx-auto" />
+                          <div className="text-xl font-extrabold text-center text-secondary">
                             Meet Your Assistant
                           </div>
                           <div className="text-center">
@@ -69,22 +69,22 @@ export const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-primary border-primary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>
               </div>
               <div className="mt-6">
                 <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-start w-full mx-auto items-center">
-                    <div className="w-full sm:w-1/2 sm:pr-8">
+                  <div className="flex justify-end w-full mx-auto items-center">
+                    <div className="w-full sm:w-1/2 sm:pl-8">
                       <div className="p-6 bg-white rounded relative shadow-lg">
-                        <div className="absolute text-[10rem] font-extrabold text-primary opacity-20 h-[10rem] flex items-center top-0 -left-16">
+                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -right-20">
                           3
                         </div>
                         <div className="flex flex-col gap-4">
-                          <Calendar className="text-primary w-12 h-12 mx-auto" />
-                          <div className="text-xl font-extrabold text-center text-primary">
+                          <Calendar className="text-secondary w-12 h-12 mx-auto" />
+                          <div className="text-xl font-extrabold text-center text-secondary">
                             Free Trial
                           </div>
                           <div className="text-center">
@@ -98,22 +98,22 @@ export const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-primary border-primary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>
               </div>
               <div className="mt-6">
                 <div className="flex flex-col sm:flex-row items-center">
-                  <div className="flex justify-end w-full mx-auto items-center">
-                    <div className="w-full sm:w-1/2 sm:pl-8">
+                  <div className="flex justify-start w-full mx-auto items-center">
+                    <div className="w-full sm:w-1/2 sm:pr-8">
                       <div className="p-6 bg-white rounded relative shadow-lg">
-                        <div className="absolute text-[10rem] font-extrabold text-primary opacity-20 h-[10rem] flex items-center top-0 -right-20">
+                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -left-20">
                           4
                         </div>
                         <div className="flex flex-col gap-4">
-                          <SocialMedia className="text-primary w-12 h-12 mx-auto" />
-                          <div className="text-xl font-extrabold text-center text-primary">
+                          <SocialMedia className="text-secondary w-12 h-12 mx-auto" />
+                          <div className="text-xl font-extrabold text-center text-secondary">
                             Onboarding
                           </div>
                           <div className="text-center">
@@ -128,7 +128,7 @@ export const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-primary border-primary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>

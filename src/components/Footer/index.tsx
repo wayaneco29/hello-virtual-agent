@@ -12,7 +12,7 @@ export const Footer = () => {
       <div className="nav-wrapper py-14 border-b border-solid">
         <div className="flex gap-8">
           <div className="flex-1 flex gap-0 flex-col">
-            <div className="text-primary font-bold mb-1">General VA</div>
+            <div className="text-secondary font-bold mb-1">General VA</div>
             <div>Social Media</div>
             <div>Data Entry</div>
             <div>Order / Invoice Processing</div>
@@ -23,12 +23,12 @@ export const Footer = () => {
             <div>File Management / Organizing</div>
           </div>
           <div className="flex-1 flex flex-col">
-            <div className="text-primary font-bold mb-1">
+            <div className="text-secondary font-bold mb-1">
               Financial Admin VA
             </div>
             <div>Accounting</div>
             <div>Bookkeeping</div>
-            <div className="text-primary font-bold mt-4 mb-1">
+            <div className="text-secondary font-bold mt-4 mb-1">
               E-Commerce Admin VA
             </div>
             <div>Lead Generation</div>
@@ -37,7 +37,7 @@ export const Footer = () => {
             <div>Online Shop Management</div>
           </div>
           <div className="flex-1 flex flex-col">
-            <div className="text-primary font-bold mb-1">Careers</div>
+            <div className="text-secondary font-bold mb-1">Careers</div>
             <div>Job Vacancies</div>
           </div>
           <div className="flex-1 flex flex-col overflow-hidden">
@@ -53,12 +53,14 @@ export const Footer = () => {
           </div>
           <div className="flex items-center mb-3">
             <img src={Email} alt="Contact" className="w-4 mr-2" />
-            <span>tam@hellovirtualagent.com</span>
+            <span>team@hellovirtualagent.com</span>
           </div>
           <div>
             Copyright © 2023{' '}
-            <span className="text-primary font-bold">Hello Virtual Agent</span>.
-            All rights reserved.
+            <span className="text-secondary font-bold">
+              Hello Virtual Agent
+            </span>
+            . All rights reserved.
           </div>
           <div className="flex gap-4 mt-4 justify-center items-center">
             <a href="#" title="Youtube">

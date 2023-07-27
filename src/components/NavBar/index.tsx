@@ -27,7 +27,7 @@ const NAV_LIST = [
   },
   {
     path: ROUTE_PRICING,
-    name: 'Pricing',
+    name: 'PRICING',
   },
   {
     path: ROUTE_CONTACT,

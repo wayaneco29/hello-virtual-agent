@@ -42,10 +42,10 @@ export const BookPage = () => {
       >
         <img
           src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-26.png.webp"
-          className="absolute -z-10 -left-48 top-40 rotate-[60deg]"
+          className="absolute -z-10 -left-48 top-72 md:top-40 rotate-[60deg] scale-150 md:scale-100"
         />
         <div className="flex gap-6 flex-col lg:flex-row md:gap-16 lg:gap-24">
-          <div className="order-2 w-[460px] min-h-[300px] self-center lg:self-start lg:order-none">
+          <div className="order-2 w-full sm:w-[460px] min-h-[300px] self-center lg:self-start lg:order-none">
             <div className="bg-white p-4 rounded-2xl shadow-md relative z-10">
               <InlineWidget
                 url="https://calendly.com/wayaneco29/free-consultation"
@@ -56,7 +56,7 @@ export const BookPage = () => {
             </div>
           </div>
           <div className="order-1 flex-1 lg:order-none">
-            <SectionTitle className="font-extrabold pr-[30%] lg:pr-0">
+            <SectionTitle className="font-extrabold sm:pr-16 md:pr-52 lg:pr-0">
               Book Your{' '}
               <span className="text-secondary">Free Business Consultation</span>
             </SectionTitle>

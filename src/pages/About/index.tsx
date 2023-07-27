@@ -43,7 +43,7 @@ export const AboutPage = () => {
           <div className="flex gap-10 pt-16 h-full items-center flex-col lg:flex-row lg:gap-0 lg-pt-0">
             <div className="lg:flex-1 pl-6 md:pl-14 lg:pl-20 xl:pl-[15%]">
               <div className="pr-0 md:pr-10">
-                <SectionTitle className="lg:pr-12 mb-6 font-extrabold !text-h1">
+                <SectionTitle className="lg:pr-12 mb-6 font-extrabold">
                   Best <span className="text-secondary">Virtual Assistant</span>{' '}
                   Outsourcing Company in Philippines
                 </SectionTitle>

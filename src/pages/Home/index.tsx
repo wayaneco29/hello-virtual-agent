@@ -9,6 +9,7 @@ import {
   HearFromClients,
   PricingStartsAt,
   BookACall,
+  SectionTitle,
 } from 'components';
 
 import Banner from 'assets/images/Team.svg';
@@ -52,10 +53,10 @@ export const HomePage = () => {
       >
         <img
           src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-31.png.webp"
-          className="absolute -right-96 top-32 lg:top-0"
+          className="absolute md:-right-96 top-32 lg:top-0 scale-125 md:scale-100"
         />
-        <div className="h-[85dvh] flex items-center w-full flex-col">
-          <div className="px-10 lg:px-14 2xl:px-72 my-auto w-full">
+        <div className="min-h-[85dvh] flex items-center w-full flex-col">
+          <div className="px-6 lg:px-14 2xl:px-72 my-auto w-full">
             <div className="flex items-center flex-col md:flex-row lg:flex-row">
               <div className="flex-1">
                 <div>
@@ -63,7 +64,7 @@ export const HomePage = () => {
                     <span className="text-secondary ">Hello Virtual Agent</span>{' '}
                     - <span>Virtual Assistant Agency</span>
                   </div>
-                  <div className="font-extrabold text-h1">
+                  <SectionTitle className="font-extrabold">
                     <div>
                       Outsource <span className="text-secondary">Virtual</span>
                     </div>
@@ -71,18 +72,18 @@ export const HomePage = () => {
                       <span className="text-secondary">Assistants</span> in the
                       Philippines
                     </div>
-                  </div>
+                  </SectionTitle>
                   <div className="my-4 text-black/50 font-bold">
                     Free up your time for things that are important to you, and
                     pay only for the hours you need, at a low cost.
                   </div>
-                  <button className="px-10 py-3 rounded-md shadow bg-secondary text-white font-bold mt-7">
+                  <button className="px-6 py-2 md:px-10 md:py-3 rounded-md shadow bg-secondary text-white font-bold mt-7">
                     GET STARTED
                   </button>
                 </div>
               </div>
               <div className="flex-1">
-                <img src={Banner} className="relative z-10" />
+                <img src={Banner} className="relative z-10 hidden md:block" />
               </div>
             </div>
           </div>

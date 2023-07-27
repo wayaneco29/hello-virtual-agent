@@ -59,13 +59,13 @@ export const ServicesPage = () => {
           className="absolute -left-72 top-36 -z-10"
         />
         <div className="lg:h-[85dvh] min-h-[85dvh] flex items-center w-full flex-col">
-          <div className="px-10 lg:px-14 2xl:px-72 my-auto w-full mt-32">
+          <div className="px-6 lg:px-14 2xl:px-72 my-auto w-full mt-32">
             <div className="flex lg:gap-10 items-center flex-col lg:flex-row">
               <div className="flex-1 order-2 lg:order-none">
                 <img src={Consult} className="w-[500px] lg:w-auto" />
               </div>
               <div className="flex-1 order-1 lg:order-none">
-                <SectionTitle className="mb-4 text-h1 font-extrabold">
+                <SectionTitle className="mb-4 font-extrabold">
                   Hire a Virtual Assistant experienced in{' '}
                   <span className="text-secondary">
                     Admin, Marketing and more

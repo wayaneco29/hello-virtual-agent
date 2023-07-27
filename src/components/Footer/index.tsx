@@ -11,7 +11,7 @@ export const Footer = () => {
     <div className="bg-black text-white">
       <div className="nav-wrapper py-14 border-b border-solid">
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <div className="flex-1 flex gap-0 flex-col">
+          <div className="flex-1 flex gap-0 flex-col text-center sm:text-left">
             <div className="text-secondary font-bold mb-1">General VA</div>
             <div>Social Media</div>
             <div>Data Entry</div>
@@ -22,7 +22,7 @@ export const Footer = () => {
             <div>Answering Phone Call</div>
             <div>File Management / Organizing</div>
           </div>
-          <div className="flex-1 flex flex-col">
+          <div className="flex-1 flex flex-col text-center sm:text-left">
             <div className="text-secondary font-bold mb-1">
               Financial Admin VA
             </div>
@@ -36,12 +36,16 @@ export const Footer = () => {
             <div>Customer Service</div>
             <div>Online Shop Management</div>
           </div>
-          <div className="flex-1 flex flex-col">
+          <div className="flex-1 flex flex-col text-center sm:text-left">
             <div className="text-secondary font-bold mb-1">Careers</div>
             <div>Job Vacancies</div>
           </div>
           <div className="flex-1 flex flex-col overflow-hidden">
-            <img src={HVALogo} alt="HVA Logo" className="max-w-[300px]" />
+            <img
+              src={HVALogo}
+              alt="HVA Logo"
+              className="max-w-[250px] mx-auto"
+            />
           </div>
         </div>
       </div>
@@ -55,7 +59,7 @@ export const Footer = () => {
             <img src={Email} alt="Contact" className="w-4 mr-2" />
             <span>team@hellovirtualagent.com</span>
           </div>
-          <div>
+          <div className="text-center">
             Copyright © 2023{' '}
             <span className="text-secondary font-bold">
               Hello Virtual Agent

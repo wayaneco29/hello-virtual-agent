@@ -41,18 +41,18 @@ export const PricingPage = () => {
       >
         <img
           src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-26.png.webp"
-          className="absolute -right-72 top-20 -z-10"
+          className="absolute top-44 -right-60 md:-right-72 md:top-20 -z-10"
         />
         <div className="px-16 my-auto mt-32 w-full sm:px-24 md:px-20 xl:px-40">
           <div className="flex items-center gap-10 flex-col lg:flex-row">
             <div className="flex-1 self-start lg:self-center">
-              <div className="flex flex-col gap-10">
-                <SectionTitle className="text-h1 font-extrabold">
+              <div className="flex flex-col gap-4 md:gap-10">
+                <SectionTitle className="font-extrabold">
                   Simple Pricing,
                   <br />
                   Affordable Plans
                 </SectionTitle>
-                <button className="px-16 py-3 rounded-md shadow bg-secondary text-white font-bold mt-7 w-fit">
+                <button className="px-6 py-2 md:px-16 md:py-3 rounded-md shadow bg-secondary text-white font-bold mt-7 w-fit">
                   GET STARTED
                 </button>
               </div>

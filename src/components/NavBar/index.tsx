@@ -120,8 +120,10 @@ export const NavBar = () => {
       </div>
       <div
         className={classNames(
-          'fixed inset-0 bg-white transition-all duration-300',
-          isActive ? 'z-[9999999] opacity-100' : 'opacity-0 -z-10'
+          'fixed inset-0 bg-white transition-opacity duration-300',
+          isActive
+            ? 'z-[9999999] opacity-100'
+            : 'opacity-0 -z-40 -translate-x-full'
         )}
       >
         <div className="h-[60px] flex justify-between px-4 py-[3px]">
@@ -160,7 +162,7 @@ export const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center h-full pb-20 items-center gap-4">
+        <div className="flex flex-col justify-center h-full pb-20 items-center gap-4 relative -z-10">
           {NAV_LIST.map((item, index) => (
             <div
               key={index}

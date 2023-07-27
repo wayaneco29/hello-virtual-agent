@@ -4,13 +4,13 @@ import Business from 'assets/images/business.webp';
 
 export const WhoWeServe = () => {
   return (
-    <Container parentClassName="py-16 bg-primary/40">
+    <Container parentClassName="py-14 bg-primary/40 md:py-16">
       <img
         src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-31.png.webp"
-        className="absolute inset-0"
+        className="absolute inset-0 -z-10"
       />
-      <div className="flex gap-6">
-        <div className="max-w-[400px]">
+      <div className="flex gap-6 flex-col lg:flex-row">
+        <div className="px-4 text-center lg:text-left lg:max-w-[400px] md:px-0 2xl:max-w-[600px]">
           <SectionTitle className="font-extrabold text-black">
             Who We Serve
           </SectionTitle>
@@ -29,7 +29,7 @@ export const WhoWeServe = () => {
           <img
             src={Business}
             alt="Business"
-            className="absolute h-auto max-h-[800px] z-10"
+            className="z-10 w-full mx-auto max-w-[500px] h-auto md:max-h-[700px] md:w-auto lg:absolute md:right-10"
           />
         </div>
       </div>

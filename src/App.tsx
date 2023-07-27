@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
-import { NavBar, Footer } from 'components';
+import { NavBar, Footer, PricingStartsAt, BookACall } from 'components';
 import {
   HomePage,
   AboutPage,
@@ -77,6 +77,8 @@ const App = () => {
             errorElement={<div>Error...</div>}
           />
         </Routes>
+        <PricingStartsAt />
+        <BookACall />
         <Footer />
       </BrowserRouter>
     </Fragment>

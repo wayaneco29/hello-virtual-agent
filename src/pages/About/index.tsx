@@ -34,20 +34,17 @@ export const AboutPage = () => {
 
   return (
     <div ref={ref as any}>
-      <section className="h-[86dvh]">
-        <div className="pt-[70px] px-32 w-full h-full relative overflow-hidden">
+      <section className="lg:h-[85dvh]">
+        <div className="pt-[70px] w-full h-full relative overflow-hidden">
           <img
             src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-56.png.webp"
-            className="absolute -right-72 top-36"
+            className="absolute -right-72 top-36 -z-10"
           />
-          <div className="flex gap-10 h-full items-center">
-            <div className="flex-1">
-              <div className="pr-10">
-                <SectionTitle className="pr-12 mb-6">
-                  Best{' '}
-                  <span className="text-secondary font-extrabold">
-                    Virtual Assistant
-                  </span>{' '}
+          <div className="flex gap-10 pt-16 h-full items-center flex-col lg:flex-row lg:gap-0 lg-pt-0">
+            <div className="lg:flex-1 pl-6 md:pl-14 lg:pl-20 xl:pl-[15%]">
+              <div className="pr-0 md:pr-10">
+                <SectionTitle className="lg:pr-12 mb-6 font-extrabold !text-h1">
+                  Best <span className="text-secondary">Virtual Assistant</span>{' '}
                   Outsourcing Company in Philippines
                 </SectionTitle>
                 <div>
@@ -60,61 +57,20 @@ export const AboutPage = () => {
                   put more focus on more important tasks may it be business or
                   personal matters.
                 </div>
-                <div className="mt-4">
-                  Our core is to ensure Client satisfaction by providing
-                  professional agent and competitive rates and packaged
-                  solutions that will fit their business need and at the same
-                  time their budget.
-                </div>
               </div>
             </div>
-            <div className="flex-1">
-              <img src={AboutTeam} />
+            <div className="flex-1 pr-6">
+              <img src={AboutTeam} className="relative my-auto w-[600px]" />
             </div>
           </div>
         </div>
       </section>
-      {/* <section>
-        <div className="w-full mt-32">
-          <div className="text-center">
-            <SectionTitle className="font-extrabold text-secondary">
-              Motivation
-            </SectionTitle>
-          </div>
-        </div>
-        <div className="flex mt-16">
-          <div className="flex-1 pl-56 pr-10 py-16">
-            <div className="rounded-md shadow-md p-7 h-full">
-              <div className="text-secondary font-bold text-2xl">Goal</div>
-              <div className="mt-6 font-bold">
-                Our main goal is to provide a result-driven solution based on
-                each person’s experiences and challenges. This way we can
-                connect outstanding VAs to the world and make them more
-                productive and successful. We accomplish this by helping clients
-                to select the most appropriate services we offer to meet and
-                exceed expectations.
-              </div>
-            </div>
-          </div>
-          <div className="flex-1 pr-56 pl-10 py-16">
-            <div className="rounded-md shadow-md p-7 h-full">
-              <div className="text-secondary font-bold text-2xl">Core</div>
-              <div className="mt-6 font-bold">
-                Our core is to ensure Client satisfaction by providing
-                professional agents and competitive rates and packaged solutions
-                that will fit their business needs and at the same time their
-                budget.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <OurTeam />
       <section className="bg-primary/40">
-        <div className="px-60 ">
-          <div className="flex gap-10 py-16">
+        <div className="px-10 lg:px-[10%] xl:px-[15%] ">
+          <div className="flex gap-10 py-16 flex-col md:flex-row">
             <div className="flex-1">
-              <div className="pr-16">
+              <div className="pr-0 xl:pr-16">
                 <SectionTitle className="font-extrabold mb-6 text-secondary">
                   Company Culture
                 </SectionTitle>
@@ -143,8 +99,6 @@ export const AboutPage = () => {
           </div>
         </div>
       </section>
-      <PricingStartsAt />
-      <BookACall />
     </div>
   );
 };

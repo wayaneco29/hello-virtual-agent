@@ -17,7 +17,10 @@ export default {
         button: '18px',
         p: '17px',
       },
-      screens: {},
+      screens: {
+        xl: '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],

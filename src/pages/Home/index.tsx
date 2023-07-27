@@ -2,11 +2,6 @@ import { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import {
-  SectionTitle,
-  Button,
-  Container,
-  CurveSVG,
-  Box,
   WhatCanYouOutSource,
   HowItWorks,
   WhoWeServe,
@@ -16,15 +11,7 @@ import {
   BookACall,
 } from 'components';
 
-import BackgroundImage from 'assets/icons/svg/asset.svg';
-import CurveLine from 'assets/images/CurveLine.svg';
-import CheckImage from 'assets/icons/svg/check.svg';
-import HeroImage from 'assets/images/hero.webp';
-import classNames from 'classnames';
-
-import { Case, Lamp } from 'components/SVG';
 import Banner from 'assets/images/Team.svg';
-import BlobScatter from 'assets/images/BlobScatter.svg';
 
 export const HomePage = () => {
   const ref = useRef();
@@ -68,8 +55,8 @@ export const HomePage = () => {
           className="absolute -right-96 top-32 lg:top-0"
         />
         <div className="h-[85dvh] flex items-center w-full flex-col">
-          <div className="px-24 lg:px-72 my-auto w-full">
-            <div className="flex items-center">
+          <div className="px-10 lg:px-14 2xl:px-72 my-auto w-full">
+            <div className="flex items-center flex-col md:flex-row lg:flex-row">
               <div className="flex-1">
                 <div>
                   <div className="text-base font-bold mb-2">
@@ -102,14 +89,14 @@ export const HomePage = () => {
         </div>
       </section>
       <WhatCanYouOutSource />
-      <div className="w-full py-8 min-h-52 bg-primary/30 sm:py-14">
+      <div className="w-full py-14 min-h-52 bg-primary/30 sm:py-8 md:py-14">
         <div className="main-wrapper">
-          <div className="flex items-center justify-between h-full p-6 flex-col sm:flex-row sm:px-20">
-            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold text-black/90">
+          <div className="flex items-center justify-between h-full px-6 flex-col sm:flex-row 2xl:px-20">
+            <div className="pr-0 text-lg sm:text-[25px] font-bold text-black/90 sm:pr-10 lg:pr-[10%] 2xl:pr-[20%]">
               Do you want to simplify and automate your business with
               intelligent digital tools and experienced Virtual Assistants?
             </div>
-            <button className="py-2 px-4 text-base sm:py-4 sm:px-10 mt-4 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit shadow-md">
+            <button className="py-2 px-6 text-base mt-6 sm:py-3 sm:px-10 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit shadow-md sm:w-fit">
               LET'S CHAT
             </button>
           </div>
@@ -121,19 +108,17 @@ export const HomePage = () => {
       <HearFromClients />
       <div className="w-full py-8 min-h-52 bg-primary/30 sm:py-14">
         <div className="main-wrapper">
-          <div className="flex items-center justify-between h-full p-6 flex-col sm:flex-row sm:px-20">
-            <div className="sm:pr-20 text-lg sm:text-[25px] font-bold text-black">
+          <div className="flex items-center justify-between h-full px-6 flex-col sm:flex-row 2xl:px-20">
+            <div className="pr-0 text-lg sm:text-[25px] font-bold text-black/90 sm:pr-10 lg:pr-[10%] 2xl:pr-[20%]">
               We’re different because we’re an end-to-end service that will hold
               your hand every step of the way.
             </div>
-            <button className="py-2 px-4 text-base sm:py-4 sm:px-10 mt-4 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit">
+            <button className="py-2 px-6 mt-4 text-base sm:py-4 sm:px-10 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit">
               LET'S CHAT
             </button>
           </div>
         </div>
       </div>
-      <PricingStartsAt />
-      <BookACall />
     </>
   );
 };

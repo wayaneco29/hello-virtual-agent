@@ -2,13 +2,13 @@ import { Container, SectionTitle } from 'components';
 
 export const OurTeam = () => {
   return (
-    <Container className="py-32">
+    <Container className="py-14 md:py-32">
       <img
         src="https://myva360.com/wp-content/uploads/2022/12/brush-stroke-63.png.webp"
         alt=""
         className="absolute top-[53%] left-0 -z-10"
       />
-      <div className="w-1/2">
+      <div className="w-full lg:w-1/2">
         <SectionTitle className="font-extrabold text-secondary">
           Our Team
         </SectionTitle>
@@ -24,7 +24,7 @@ export const OurTeam = () => {
           allowing them to integrate seamlessly into your business and life
         </div>
       </div>
-      <div className="flex gap-10 mt-16">
+      <div className="flex gap-10 mt-16 flex-col md:flex-row">
         <div className="flex-1">
           <div className="rounded-md shadow-md relative h-full w-full bg-[#4a62ae]">
             <img
@@ -36,7 +36,7 @@ export const OurTeam = () => {
               className="absolute bottom-0 -left-32 w-[60%]"
             />
             <div className="flex justify-end">
-              <div className="w-2/3 h-full">
+              <div className="w-2/3 h-full relative z-10">
                 <div className="pt-6 pr-6 font-bold text-h2 text-white mb-6">
                   Jane Done
                 </div>
@@ -59,12 +59,12 @@ export const OurTeam = () => {
           </div>
         </div>
         <div className="flex-1">
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             <div className="flex flex-col">
               <div className="rounded-md shadow-md overflow-hidden">
                 <img
                   src="https://myva360.com/wp-content/uploads/2022/11/robyn-de-villiers-virtual-assistant-16.jpg.webp"
-                  width="270"
+                  className="w-full"
                   height="335"
                   loading="lazy"
                 />
@@ -78,7 +78,7 @@ export const OurTeam = () => {
               <div className="rounded-md shadow-md overflow-hidden">
                 <img
                   src="	https://myva360.com/wp-content/uploads/2022/11/lana-snyman-virtual-assistant-10.jpg.webp"
-                  width="270"
+                  className="w-full"
                   height="335"
                   loading="lazy"
                 />
@@ -94,7 +94,7 @@ export const OurTeam = () => {
               <div className="rounded-md shadow-md overflow-hidden">
                 <img
                   src="https://myva360.com/wp-content/uploads/2022/11/lerato-moya-virtual-assistant-11.jpg.webp"
-                  width="270"
+                  className="w-full"
                   height="335"
                   loading="lazy"
                 />
@@ -110,7 +110,7 @@ export const OurTeam = () => {
               <div className="rounded-md shadow-md overflow-hidden">
                 <img
                   src="https://myva360.com/wp-content/uploads/2023/03/Nina-Beljanski-Virtual-Assistant-180x223px.png.webp"
-                  width="270"
+                  className="w-full"
                   height="335"
                   loading="lazy"
                 />
@@ -126,7 +126,7 @@ export const OurTeam = () => {
               <div className="rounded-md shadow-md overflow-hidden">
                 <img
                   src="https://myva360.com/wp-content/uploads/2022/11/viktorija-stirbyte-virtual-assistant-22.jpg.webp"
-                  width="270"
+                  className="w-full"
                   height="335"
                   loading="lazy"
                 />
@@ -142,7 +142,7 @@ export const OurTeam = () => {
               <div className="rounded-md shadow-md overflow-hidden">
                 <img
                   src="https://myva360.com/wp-content/uploads/2022/11/vasilisa-jovanovic-virtual-assistant-21.jpg.webp"
-                  width="270"
+                  className="w-full"
                   height="335"
                   loading="lazy"
                 />
@@ -157,13 +157,13 @@ export const OurTeam = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-6 gap-10 mt-10">
+      <div className="grid grid-cols-2 gap-10 mt-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
         <div className="flex flex-col">
           <div className="rounded-md shadow-md overflow-hidden">
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/robyn-de-villiers-virtual-assistant-16.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -177,7 +177,7 @@ export const OurTeam = () => {
             <img
               src="	https://myva360.com/wp-content/uploads/2022/11/lana-snyman-virtual-assistant-10.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -193,7 +193,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/lerato-moya-virtual-assistant-11.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -209,7 +209,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2023/03/Nina-Beljanski-Virtual-Assistant-180x223px.png.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -225,7 +225,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/viktorija-stirbyte-virtual-assistant-22.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -241,7 +241,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/vasilisa-jovanovic-virtual-assistant-21.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -257,7 +257,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/robyn-de-villiers-virtual-assistant-16.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -271,7 +271,7 @@ export const OurTeam = () => {
             <img
               src="	https://myva360.com/wp-content/uploads/2022/11/lana-snyman-virtual-assistant-10.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -287,7 +287,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/lerato-moya-virtual-assistant-11.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -303,7 +303,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2023/03/Nina-Beljanski-Virtual-Assistant-180x223px.png.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -319,7 +319,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/viktorija-stirbyte-virtual-assistant-22.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -335,7 +335,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/vasilisa-jovanovic-virtual-assistant-21.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -351,7 +351,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/robyn-de-villiers-virtual-assistant-16.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -365,7 +365,7 @@ export const OurTeam = () => {
             <img
               src="	https://myva360.com/wp-content/uploads/2022/11/lana-snyman-virtual-assistant-10.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -381,7 +381,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2022/11/lerato-moya-virtual-assistant-11.jpg.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>
@@ -397,7 +397,7 @@ export const OurTeam = () => {
             <img
               src="https://myva360.com/wp-content/uploads/2023/03/Nina-Beljanski-Virtual-Assistant-180x223px.png.webp"
               loading="lazy"
-              width="270"
+              className="w-full"
               height="335"
             />
           </div>

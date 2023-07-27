@@ -26,8 +26,26 @@ html {
   font-size: 17px;
 }
 
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  display: none;
+}
+
+// .alice-carousel__dots-item {
+//   width: 20px !important;
+//   height: 4px !important;
+//   border-radius: 2px !important;
+//   &.__active {
+//     background-color: var(--primary) !important;
+//   }
+// }
+
+.alice-carousel__stage {
+  cursor: grab;
+}
+
 .main-wrapper {
-  @apply px-4 sm:px-4 md:px-10 lg:px-36 xl:px-48 2xl:px-64;
+  @apply px-4 md:px-10 lg:px-16 xl:px-[10%] 2xl:px-[15%];
 }
 
 .nav-wrapper {

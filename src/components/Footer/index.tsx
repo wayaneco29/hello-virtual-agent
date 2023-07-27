@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <div className="bg-black text-white">
       <div className="nav-wrapper py-14 border-b border-solid">
-        <div className="flex gap-8">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="flex-1 flex gap-0 flex-col">
             <div className="text-secondary font-bold mb-1">General VA</div>
             <div>Social Media</div>
@@ -41,7 +41,7 @@ export const Footer = () => {
             <div>Job Vacancies</div>
           </div>
           <div className="flex-1 flex flex-col overflow-hidden">
-            <img src={HVALogo} alt="HVA Logo" />
+            <img src={HVALogo} alt="HVA Logo" className="max-w-[300px]" />
           </div>
         </div>
       </div>

@@ -3,12 +3,12 @@ import { Case, User, Calendar, SocialMedia } from 'components/SVG';
 
 export const HowItWorks = () => {
   return (
-    <Container parentClassName="py-16 overflow-hidden">
+    <Container parentClassName="py-14 overflow-hidden md:py-32">
       <img
         src="https://myva360.com/wp-content/uploads/2022/12/brush-stroke-72.png.webp"
         className="absolute -right-32 top-[40%]"
       />
-      <div className="text-center px-32">
+      <div className="text-center px-6 sm:px-16 md:px-32">
         <SectionTitle className="font-extrabold">How It Works</SectionTitle>
         <div className="mt-4">
           Work smarter with{' '}
@@ -18,7 +18,7 @@ export const HowItWorks = () => {
       </div>
       <div>
         <div className="min-h-screen py-6 flex flex-col sm:py-12">
-          <div className="py-3 sm:w-2/3 sm:mx-auto w-full px-2 sm:px-0">
+          <div className="py-3 w-full  lg:w-full lg:mx-auto px-2 sm:px-0 xl:w-2/3">
             <div className="relative text-black antialiased text-sm font-semibold">
               <div className="hidden sm:block w-1 bg-secondary absolute h-full left-1/2 transform -translate-x-1/2" />
               <div className="mt-6">

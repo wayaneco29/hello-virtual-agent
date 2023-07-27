@@ -75,8 +75,9 @@ export const NavBar = () => {
       </div>
       <div className="hidden sm:block">
         <div className="flex gap-4 uppercase text-sm font-semibold transition-all items-center text-black">
-          {NAV_LIST.map(item => (
+          {NAV_LIST.map((item, index) => (
             <div
+              key={index}
               className={classNames(
                 'nav-list cursor-pointer hover:text-primary',
                 item?.path === pathname && 'active'

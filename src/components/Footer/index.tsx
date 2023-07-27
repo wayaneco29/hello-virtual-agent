@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import HVALogo from 'assets/images/HVA-Logo.webp';
 import Phone from 'assets/icons/phone.png';
 import Email from 'assets/icons/email.png';
@@ -6,35 +8,69 @@ import Facebook from 'assets/icons/svg/facebook.svg';
 import Twitter from 'assets/icons/svg/twitter.svg';
 import Instagram from 'assets/icons/svg/instagram.svg';
 
+import { ROUTE_BOOK } from 'constants';
+
+const GENERAL_VA = [
+  'Social Media',
+  'Data Entry',
+  'Order / Invoice Processing',
+  'Calendar and Email Management',
+  'Appointment Setting',
+  'Market Research',
+  'Answering Phone Call',
+  'File Management / Organizing',
+];
+
+const FINANCIAL_VA = ['Accounting', 'Bookkeeping'];
+
+const ECOMMERCE_VA = [
+  'Lead Generation',
+  'Inbound / Outbound Calling',
+  'Customer Service',
+  'Online Shop Management',
+];
+
 export const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-black text-white">
       <div className="nav-wrapper py-14 border-b border-solid">
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="flex-1 flex gap-0 flex-col text-center sm:text-left">
             <div className="text-secondary font-bold mb-1">General VA</div>
-            <div>Social Media</div>
-            <div>Data Entry</div>
-            <div>Order / Invoice Processing</div>
-            <div>Calendar and Email Management</div>
-            <div>Appointment Setting</div>
-            <div>Market Research</div>
-            <div>Answering Phone Call</div>
-            <div>File Management / Organizing</div>
+            {GENERAL_VA.map(item => (
+              <div
+                className="cursor-pointer hover:text-secondary"
+                onClick={() => navigate(ROUTE_BOOK)}
+              >
+                {item}
+              </div>
+            ))}
           </div>
           <div className="flex-1 flex flex-col text-center sm:text-left">
             <div className="text-secondary font-bold mb-1">
               Financial Admin VA
             </div>
-            <div>Accounting</div>
-            <div>Bookkeeping</div>
+            {FINANCIAL_VA.map(item => (
+              <div
+                className="cursor-pointer hover:text-secondary"
+                onClick={() => navigate(ROUTE_BOOK)}
+              >
+                {item}
+              </div>
+            ))}
             <div className="text-secondary font-bold mt-4 mb-1">
               E-Commerce Admin VA
             </div>
-            <div>Lead Generation</div>
-            <div>Inbound / Outbound Calling</div>
-            <div>Customer Service</div>
-            <div>Online Shop Management</div>
+            {ECOMMERCE_VA.map(item => (
+              <div
+                className="cursor-pointer hover:text-secondary"
+                onClick={() => navigate(ROUTE_BOOK)}
+              >
+                {item}
+              </div>
+            ))}
           </div>
           <div className="flex-1 flex flex-col text-center sm:text-left">
             <div className="text-secondary font-bold mb-1">Careers</div>

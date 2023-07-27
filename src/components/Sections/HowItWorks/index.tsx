@@ -18,7 +18,7 @@ export const HowItWorks = () => {
       </div>
       <div>
         <div className="min-h-screen py-6 flex flex-col sm:py-12">
-          <div className="py-3 w-full  lg:w-full lg:mx-auto px-2 sm:px-0 xl:w-2/3">
+          <div className="py-3 w-full lg:w-[90%] lg:mx-auto px-2 sm:px-0 xl:w-2/3">
             <div className="relative text-black antialiased text-sm font-semibold">
               <div className="hidden sm:block w-1 bg-secondary absolute h-full left-1/2 transform -translate-x-1/2" />
               <div className="mt-6">
@@ -26,7 +26,7 @@ export const HowItWorks = () => {
                   <div className="flex justify-end w-full mx-auto items-center">
                     <div className="w-full sm:w-1/2 sm:pl-8">
                       <div className="p-6 bg-white rounded relative shadow-lg z-10">
-                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -right-16 -z-10">
+                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -right-5 lg:-right-16 -z-10">
                           1
                         </div>
                         <div className="flex flex-col gap-4">
@@ -44,7 +44,7 @@ export const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 items-center justify-center hidden sm:flex">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ export const HowItWorks = () => {
                   <div className="flex justify-start w-full mx-auto items-center">
                     <div className="w-full sm:w-1/2 sm:pr-8">
                       <div className="p-6 bg-white rounded relative z-10 shadow-lg">
-                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -left-20 -z-10">
+                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -left-5 lg:-left-20 -z-10">
                           2
                         </div>
                         <div className="flex flex-col gap-4">
@@ -73,7 +73,7 @@ export const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 items-center justify-center hidden sm:flex">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ export const HowItWorks = () => {
                   <div className="flex justify-end w-full mx-auto items-center">
                     <div className="w-full sm:w-1/2 sm:pl-8">
                       <div className="p-6 bg-white rounded relative shadow-lg">
-                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -right-20">
+                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -right-5 lg:-right-20">
                           3
                         </div>
                         <div className="flex flex-col gap-4">
@@ -102,7 +102,7 @@ export const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 items-center justify-center hidden sm:flex">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export const HowItWorks = () => {
                   <div className="flex justify-start w-full mx-auto items-center">
                     <div className="w-full sm:w-1/2 sm:pr-8">
                       <div className="p-6 bg-white rounded relative shadow-lg">
-                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -left-20">
+                        <div className="absolute text-[10rem] font-extrabold text-secondary opacity-20 h-[10rem] flex items-center top-0 -left-5 lg:-left-20">
                           4
                         </div>
                         <div className="flex flex-col gap-4">
@@ -132,7 +132,7 @@ export const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-secondary border-secondary border-4 w-5 h-5 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 items-center justify-center hidden sm:flex">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>

@@ -1,13 +1,15 @@
 import { Container, SectionTitle } from 'components';
 
-import { CheckIcon, PlusIcon, CurveLineLeftToRight } from 'components/SVG';
+import { CheckIcon, PlusIcon } from 'components/SVG';
+
+import BrushStroke32 from 'assets/images/strokes/brush-stroke-32.webp';
 
 export const WhyHVAIsDifferent = () => {
   return (
     <Container parentClassName="py-14 overflow-hidden lg:py-32">
       {/* <CurveLineLeftToRight className="absolute -z-10 left-0 bottom-0 w-full" /> */}
       <img
-        src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-32.png.webp"
+        src={BrushStroke32}
         className="absolute hidden -z-10 top-32 left-0 right-0 md:block lg:top-64"
       />
       <div className="text-center px-6 md:px-32">

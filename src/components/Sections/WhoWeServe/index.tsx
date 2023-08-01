@@ -1,14 +1,12 @@
 import { Container, SectionTitle } from 'components';
 
 import Business from 'assets/images/business.webp';
+import BrushStroke31 from 'assets/images/strokes/brush-stroke-31.webp';
 
 export const WhoWeServe = () => {
   return (
     <Container parentClassName="py-14 bg-primary/40 md:py-16">
-      <img
-        src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-31.png.webp"
-        className="absolute inset-0 -z-10"
-      />
+      <img src={BrushStroke31} className="absolute inset-0 -z-10" />
       <div className="flex gap-6 flex-col lg:flex-row">
         <div className="px-4 text-center lg:text-left lg:max-w-[400px] md:px-0 2xl:max-w-[600px]">
           <SectionTitle className="font-extrabold text-black">

@@ -1,5 +1,7 @@
 import { Container, SectionTitle, Button } from 'components';
 
+import ReviewBadge from 'assets/images/Review.webp';
+
 export const HearFromClients = () => {
   return (
     <Container parentClassName="py-14 md:py-32">
@@ -25,11 +27,7 @@ export const HearFromClients = () => {
               </div>
             </div>
             <div className="my-4 sm:my-8">
-              <img
-                src="https://outsourcingangel.com/wp-content/uploads/2022/04/stars.png"
-                alt=""
-                className="h-4 sm:h-auto"
-              />
+              <img src={ReviewBadge} alt="" className="h-4 sm:h-auto" />
             </div>
             <div className="text-sm sm:text-base">
               What i like about Sarah is her ability to ask the right questions
@@ -56,11 +54,7 @@ export const HearFromClients = () => {
               </div>
             </div>
             <div className="my-4 sm:my-8">
-              <img
-                src="https://outsourcingangel.com/wp-content/uploads/2022/04/stars.png"
-                alt=""
-                className="h-4 sm:h-auto"
-              />
+              <img src={ReviewBadge} alt="" className="h-4 sm:h-auto" />
             </div>
             <div className="text-sm sm:text-base">
               What i like about Sarah is her ability to ask the right questions

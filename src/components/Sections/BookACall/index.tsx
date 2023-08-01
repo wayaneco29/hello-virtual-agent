@@ -1,13 +1,20 @@
 import { Container, SectionTitle } from 'components';
+import { useNavigate } from 'react-router-dom';
+
+import BrushStroke56 from 'assets/images/strokes/brush-stroke-56.webp';
+
+import { ROUTE_BOOK } from 'constants';
 
 export const BookACall = () => {
+  const navigate = useNavigate();
+
   return (
     <Container
       parentClassName="overflow-hidden"
       subParentClassName="pb-14 md:pb-32"
     >
       <img
-        src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-56.png.webp"
+        src={BrushStroke56}
         className="absolute -right-72 w-[70%] top-24 -z-10"
       />
       <SectionTitle className="text-center font-extrabold">
@@ -25,7 +32,10 @@ export const BookACall = () => {
         today so we can find you an Agent.
       </div>
       <div className="text-center">
-        <button className="py-2 px-6 md:py-4 md:px-10 font-bold text-white bg-secondary rounded-md shadow-md">
+        <button
+          className="py-2 px-6 md:py-4 md:px-10 font-bold text-white bg-secondary rounded-md shadow-md"
+          onClick={() => navigate(ROUTE_BOOK)}
+        >
           BOOK A CALL NOW!
         </button>
       </div>

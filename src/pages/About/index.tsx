@@ -10,7 +10,9 @@ import {
 } from 'components';
 
 import AboutTeam from 'assets/images/AboutTeam.svg';
-import Goals from 'assets/images/Goals.svg';
+
+import BrushStroke56 from 'assets/images/strokes/brush-stroke-56.webp';
+import CompanyCulture from 'assets/images/CompanyCulture.webp';
 
 export const AboutPage = () => {
   const ref = useRef();
@@ -37,7 +39,7 @@ export const AboutPage = () => {
       <section className="lg:h-[85dvh]">
         <div className="pt-[70px] w-full h-full relative overflow-hidden">
           <img
-            src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-56.png.webp"
+            src={BrushStroke56}
             className="absolute -right-72 top-36 -z-10"
           />
           <div className="flex gap-10 pt-16 h-full items-center flex-col lg:flex-row lg:gap-0 lg-pt-0">
@@ -92,13 +94,15 @@ export const AboutPage = () => {
             </div>
             <div className="flex-1 relative">
               <img
-                src="https://myva360.com/wp-content/uploads/2022/11/myva360-company-culture-feat.jpeg.webp"
+                src={CompanyCulture}
                 className="rounded-md shadow-md -mb-24 w-[400px]"
               />
             </div>
           </div>
         </div>
       </section>
+      <PricingStartsAt />
+      <BookACall />
     </div>
   );
 };

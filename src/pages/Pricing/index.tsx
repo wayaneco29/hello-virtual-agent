@@ -10,8 +10,8 @@ import {
 import { CheckIcon } from 'components/SVG';
 
 import Auction from 'assets/images/Auction.svg';
-import BlobScene from 'assets/images/BlobScene.svg';
-import PolygonScatter from 'assets/images/PlygonScatter.svg';
+import BrushStroke26 from 'assets/images/strokes/brush-stroke-26.webp';
+import BrushStroke64 from 'assets/images/strokes/brush-stroke-64.webp';
 
 export const PricingPage = () => {
   const ref = useRef();
@@ -40,10 +40,10 @@ export const PricingPage = () => {
         className="relative min-h-[85dvh] flex items-center w-full flex-col overflow-hidden"
       >
         <img
-          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-26.png.webp"
+          src={BrushStroke26}
           className="absolute top-44 -right-60 md:-right-72 md:top-20 -z-10"
         />
-        <div className="px-16 my-auto mt-32 w-full sm:px-24 md:px-20 xl:px-40">
+        <div className="px-6 my-auto mt-32 w-full sm:px-24 md:px-20 xl:px-40">
           <div className="flex items-center gap-10 flex-col lg:flex-row">
             <div className="flex-1 self-start lg:self-center">
               <div className="flex flex-col gap-4 md:gap-10">
@@ -110,10 +110,7 @@ export const PricingPage = () => {
         </div>
       </section>
       <section className="relative bg-primary/30 overflow-hidden">
-        <img
-          src="https://myva360.com/wp-content/uploads/2022/12/brush-stroke-64-1024x886.png.webp"
-          className="absolute left-0 top-72 -z-10"
-        />
+        <img src={BrushStroke64} className="absolute left-0 top-72 -z-10" />
         <div className="main-wrapper">
           <div className="py-14 xl:py-32">
             <div className="text-center px-0 sm:px-10 md:px-20 lg:px-[15%]">
@@ -306,6 +303,8 @@ export const PricingPage = () => {
           </div>
         </div>
       </section>
+      <PricingStartsAt />
+      <BookACall />
     </>
   );
 };

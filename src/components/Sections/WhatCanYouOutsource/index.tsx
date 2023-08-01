@@ -10,6 +10,8 @@ import {
   User,
 } from 'components/SVG';
 
+import BrushStroke28 from 'assets/images/strokes/brush-stroke-28.webp';
+
 const LISTS = [
   {
     Icon: Case,
@@ -53,10 +55,7 @@ export const WhatCanYouOutSource = () => {
   return (
     <Container parentClassName="py-14 overflow-hidden md:py-32">
       {/* <LineDownward className="absolute w-full h-full inset-0 top-48" /> */}
-      <img
-        src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-28.png.webp"
-        className="absolute left-0 top-96"
-      />
+      <img src={BrushStroke28} className="absolute left-0 top-96" />
       <div className="relative z-40">
         <div className="sm:px-16 text-center">
           <SectionTitle className="font-extrabold">

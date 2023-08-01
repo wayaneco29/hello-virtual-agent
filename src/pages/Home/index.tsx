@@ -12,6 +12,7 @@ import {
   SectionTitle,
 } from 'components';
 
+import BrushStroke31 from 'assets/images/strokes/brush-stroke-31.webp';
 import Banner from 'assets/images/Team.svg';
 
 export const HomePage = () => {
@@ -52,7 +53,7 @@ export const HomePage = () => {
         }}
       >
         <img
-          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-31.png.webp"
+          src={BrushStroke31}
           className="absolute md:-right-96 top-32 lg:top-0 scale-125 md:scale-100"
         />
         <div className="min-h-[85dvh] flex items-center w-full flex-col">
@@ -120,6 +121,8 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
+      <PricingStartsAt />
+      <BookACall />
     </>
   );
 };

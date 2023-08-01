@@ -8,8 +8,8 @@ export const SectionTitle = ({
   return (
     <div
       className={classNames(
-        'text-h3',
-        'sm:text-h2',
+        'text-3xl',
+        'sm:text-4xl',
         'md:text-h1 leading-tight',
         className
       )}

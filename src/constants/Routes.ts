@@ -1,4 +1,4 @@
-export const ROUTE_BOOK = '/book-free-consultation';
+export const ROUTE_BOOK = '/book-a-free-consultation';
 export const ROUTE_HOME = '/';
 export const ROUTE_ABOUT = '/about-us';
 export const ROUTE_SERVICES = '/services';

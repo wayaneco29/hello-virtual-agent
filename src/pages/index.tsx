@@ -3,3 +3,4 @@ export * from './About';
 export * from './Services';
 export * from './Book';
 export * from './Pricing';
+export * from './Contact';

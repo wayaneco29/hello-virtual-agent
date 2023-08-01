@@ -9,12 +9,16 @@ import {
   BookACall,
 } from 'components';
 import AliceCarousel from 'react-alice-carousel';
-import Consult from 'assets/images/Consult.svg';
-import CheckList from 'assets/images/checklist.webp';
-import People from 'assets/images/people.webp';
-import Search from 'assets/images/search.webp';
-import Check from 'assets/icons/svg/check.svg';
+
 import { CheckIcon, DeskLamp, Magnifier, TaskList } from 'components/SVG';
+
+import Consult from 'assets/images/Consult.svg';
+import BrushStroke56 from 'assets/images/strokes/brush-stroke-56.webp';
+import BrushStroke64 from 'assets/images/strokes/brush-stroke-64.webp';
+import SocialManagement from 'assets/images/SocialManagement.webp';
+import DigitalMarketing from 'assets/images/DigitalMarketing.webp';
+import CustomerService from 'assets/images/CustomerService.webp';
+
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 export const ServicesPage = () => {
@@ -54,10 +58,7 @@ export const ServicesPage = () => {
   return (
     <div ref={ref as any}>
       <section className="relative overflow-hidden">
-        <img
-          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-56.png.webp"
-          className="absolute -left-72 top-36 -z-10"
-        />
+        <img src={BrushStroke56} className="absolute -left-72 top-36 -z-10" />
         <div className="lg:h-[85dvh] min-h-[85dvh] flex items-center w-full flex-col">
           <div className="px-6 lg:px-14 2xl:px-72 my-auto w-full mt-32">
             <div className="flex lg:gap-10 items-center flex-col lg:flex-row">
@@ -157,7 +158,7 @@ export const ServicesPage = () => {
             disableButtonsControls
             items={[
               <Box
-                image="https://outsourcingangel.com/wp-content/uploads/2022/04/Social-Media-Management.png"
+                image={SocialManagement}
                 title="Social Media Management"
                 children={[
                   'Design social media content',
@@ -168,7 +169,7 @@ export const ServicesPage = () => {
                 ]}
               />,
               <Box
-                image="https://outsourcingangel.com/wp-content/uploads/2022/04/Digital-Marketing.png"
+                image={DigitalMarketing}
                 title="Digital Marketing"
                 children={[
                   'Set-up and manage social media ads and re-marketing',
@@ -178,7 +179,7 @@ export const ServicesPage = () => {
                 ]}
               />,
               <Box
-                image="https://outsourcingangel.com/wp-content/uploads/2022/04/Customer-Service.png"
+                image={CustomerService}
                 title="Customer Service"
                 children={[
                   'Pre-sales questions',
@@ -189,7 +190,7 @@ export const ServicesPage = () => {
                 ]}
               />,
               <Box
-                image="https://outsourcingangel.com/wp-content/uploads/2022/04/Social-Media-Management.png"
+                image={SocialManagement}
                 title="Social Media Management"
                 children={[
                   'Design social media content',
@@ -203,24 +204,8 @@ export const ServicesPage = () => {
           />
         </div>
       </Container>
-      {/* <Container parentClassName="py-6 sm:py-14">
-        <div className="w-full py-8 min-h-52 rounded-2xl bg-secondary">
-          <div className="flex items-center justify-between h-full p-6 flex-col sm:flex-row sm:px-20">
-            <div className="pr-0 text-base sm:text-[25px] font-bold sm:pr-20">
-              If your business is ready to grow wings, book a FREE Discovery
-              Call with us today so we can find you an Agent.
-            </div>
-            <button className="py-2 px-4 text-base mt-4 sm:mt-0 sm:py-3 sm:px-7 rounded-full bg-primary text-white font-bold tracking-wide min-w-fit">
-              BOOK A CALL
-            </button>
-          </div>
-        </div>
-      </Container> */}
       <section className="relative bg-primary/30 overflow-hidden">
-        <img
-          src="https://myva360.com/wp-content/uploads/2022/12/brush-stroke-64-1024x886.png.webp"
-          className="absolute left-0 top-72 -z-10"
-        />
+        <img src={BrushStroke64} className="absolute left-0 top-72 -z-10" />
         <div className="main-wrapper">
           <div className="py-14 xl:py-32">
             <div className="text-center px-0 sm:px-10 md:px-20 lg:px-[15%]">
@@ -413,6 +398,8 @@ export const ServicesPage = () => {
           </div>
         </div>
       </section>
+      <PricingStartsAt />
+      <BookACall />
     </div>
   );
 };

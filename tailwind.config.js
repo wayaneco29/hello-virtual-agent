@@ -11,7 +11,7 @@ export default {
         'greeny-gray': '#ebf4f3',
       },
       fontSize: {
-        h1: '38px',
+        h1: '42px',
         h2: '28px',
         h3: '25px',
         button: '18px',

@@ -8,6 +8,7 @@ import {
   ServicesPage,
   BookPage,
   PricingPage,
+  ContactUs,
 } from 'pages';
 
 import {
@@ -16,6 +17,7 @@ import {
   ROUTE_HOME,
   ROUTE_SERVICES,
   ROUTE_PRICING,
+  ROUTE_CONTACT,
 } from 'constants';
 
 import 'global.scss';
@@ -57,6 +59,12 @@ const App = () => {
             errorElement={<div>Error...</div>}
           />
           <Route
+            index
+            path={ROUTE_CONTACT}
+            element={<ContactUs />}
+            errorElement={<div>Error...</div>}
+          />
+          <Route
             path="*"
             element={
               <div className="mt-[70px]">
@@ -77,8 +85,6 @@ const App = () => {
             errorElement={<div>Error...</div>}
           />
         </Routes>
-        <PricingStartsAt />
-        <BookACall />
         <Footer />
       </BrowserRouter>
     </Fragment>

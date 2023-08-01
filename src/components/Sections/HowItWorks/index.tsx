@@ -1,13 +1,12 @@
 import { Container, SectionTitle } from 'components';
 import { Case, User, Calendar, SocialMedia } from 'components/SVG';
 
+import BrushStroke72 from 'assets/images/strokes/brush-stroke-72.webp';
+
 export const HowItWorks = () => {
   return (
     <Container parentClassName="py-14 overflow-hidden md:py-32">
-      <img
-        src="https://myva360.com/wp-content/uploads/2022/12/brush-stroke-72.png.webp"
-        className="absolute -right-32 top-[40%]"
-      />
+      <img src={BrushStroke72} className="absolute -right-32 top-[40%]" />
       <div className="text-center px-6 sm:px-16 md:px-32">
         <SectionTitle className="font-extrabold">How It Works</SectionTitle>
         <div className="mt-4">

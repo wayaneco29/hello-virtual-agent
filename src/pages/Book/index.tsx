@@ -1,8 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
 import { InlineWidget, useCalendlyEventListener } from 'react-calendly';
 
-import { Container, SectionTitle, FAQs } from 'components';
-import Calling from 'assets/images/Calling.svg';
+import {
+  Container,
+  SectionTitle,
+  FAQs,
+  BookACall,
+  PricingStartsAt,
+} from 'components';
+
+import { Phone, Email, Facebook, Instagram, Twitter } from 'components/SVG';
+
+import BrushStroke26 from 'assets/images/strokes/brush-stroke-26.webp';
 
 export const BookPage = () => {
   const ref = useRef();
@@ -41,8 +50,8 @@ export const BookPage = () => {
         subParentClassName="pt-16"
       >
         <img
-          src="https://myva360.com/wp-content/uploads/2022/11/brush-stroke-26.png.webp"
-          className="absolute -z-10 -left-48 top-72 md:top-40 rotate-[60deg] scale-150 md:scale-100"
+          src={BrushStroke26}
+          className="absolute -z-10 -left-48 top-72 md:top-40 rotate-[60deg]"
         />
         <div className="flex gap-6 flex-col lg:flex-row md:gap-16 lg:gap-24">
           <div className="order-2 w-full sm:w-[460px] min-h-[300px] self-center lg:self-start lg:order-none">
@@ -55,12 +64,38 @@ export const BookPage = () => {
               />
             </div>
           </div>
-          <div className="order-1 flex-1 lg:order-none">
-            <SectionTitle className="font-extrabold sm:pr-16 md:pr-52 lg:pr-0">
-              Book Your{' '}
-              <span className="text-secondary">Free Business Consultation</span>
-            </SectionTitle>
-            <img src={Calling} className="my-10 w-[400px] lg:w-[520px]" />
+          <div className="order-1 flex-1 lg:order-none md:pt-0 lg:pt-16">
+            <div className="p-6 backdrop-blur-sm">
+              <SectionTitle className="font-extrabold sm:pr-16 md:pr-52 lg:pr-0">
+                Book Your{' '}
+                <span className="text-secondary">
+                  Free Business Consultation
+                </span>
+              </SectionTitle>
+              <div className="font-bold text-black/60 mt-8">
+                Free up your time for things that are important to you, and pay
+                only for the hours you need, at a low cost.
+              </div>
+              <div className="flex flex-col gap-4 mt-12">
+                <div className="flex gap-2 items-center">
+                  <Phone />{' '}
+                  <span className="font-bold text-secondary">415-300-0730</span>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <Email />{' '}
+                  <span className="font-bold text-secondary">
+                    team@hellovirtualagent.com
+                  </span>
+                </div>
+                <div className="border-t pt-5">
+                  <div className="flex gap-6">
+                    <Facebook className="text-secondary cursor-pointer transition-colors hover:text-black" />
+                    <Instagram className="text-secondary cursor-pointer transition-colors hover:text-black" />
+                    <Twitter className="text-secondary cursor-pointer transition-colors hover:text-black" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Container>
@@ -68,6 +103,8 @@ export const BookPage = () => {
         <div className="absolute w-full h-full bg-primary/40 -top-[50px] md:-top-[100px]" />
       </div>
       <FAQs />
+      <PricingStartsAt />
+      <BookACall />
     </div>
   );
 };

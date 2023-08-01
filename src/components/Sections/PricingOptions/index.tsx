@@ -1,11 +1,10 @@
 import { Container, SectionTitle } from 'components';
 
-import { CheckIcon, CurveLineTopRight } from 'components/SVG';
+import { CheckIcon } from 'components/SVG';
 
 export const PricingStartsAt = () => {
   return (
     <Container parentClassName="overflow-hidden" className="py-16 md:py-32">
-      {/* <CurveLineTopRight className="absolute left-0 right-0 bottom-0 top-0 -z-10 h-full w-full" /> */}
       <div className="rounded-lg shadow-lg px-6 py-10 bg-primary/30 md:p-14">
         <div className="flex gap-10 flex-col lg:flex-row">
           <div className="flex-1">

@@ -1,13 +1,11 @@
 import { Container, SectionTitle } from 'components';
 
+import BrushStroke63 from 'assets/images/strokes/brush-stroke-63.webp';
+
 export const OurTeam = () => {
   return (
     <Container className="py-14 md:py-32">
-      <img
-        src="https://myva360.com/wp-content/uploads/2022/12/brush-stroke-63.png.webp"
-        alt=""
-        className="absolute top-[53%] left-0 -z-10"
-      />
+      <img src={BrushStroke63} className="absolute top-[53%] left-0 -z-10" />
       <div className="w-full lg:w-1/2">
         <SectionTitle className="font-extrabold text-secondary">
           Our Team

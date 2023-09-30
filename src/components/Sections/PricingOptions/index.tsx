@@ -55,7 +55,7 @@ export const PricingStartsAt = () => {
             <div className="rounded-lg p-6 bg-secondary text-white">
               <div className="flex flex-col items-center lg:py-12">
                 <div className="text-2xl">Starting at</div>
-                <div className="font-extrabold text-[3rem]">$450</div>
+                <div className="font-extrabold text-[3rem]">$600</div>
                 <div className="text-2xl">per month</div>
               </div>
             </div>

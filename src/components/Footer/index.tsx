@@ -40,12 +40,12 @@ export const Footer = () => {
           <div className="flex-1 flex gap-0 flex-col text-center sm:text-left">
             <div className="text-secondary font-bold mb-1">General VA</div>
             {GENERAL_VA.map(item => (
-              <a
-                href={`mailto:team@hellovirtualagent.com`}
+              <div
                 className="cursor-pointer hover:text-secondary"
+                onClick={() => navigate(ROUTE_BOOK)}
               >
                 {item}
-              </a>
+              </div>
             ))}
           </div>
           <div className="flex-1 flex flex-col text-center sm:text-left">

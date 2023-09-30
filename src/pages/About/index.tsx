@@ -67,7 +67,7 @@ export const AboutPage = () => {
           </div>
         </div>
       </section>
-      <OurTeam />
+      {/* <OurTeam /> */}
       <section className="bg-primary/40">
         <div className="px-10 lg:px-[10%] xl:px-[15%] ">
           <div className="flex gap-10 py-16 flex-col md:flex-row">

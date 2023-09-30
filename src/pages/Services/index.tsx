@@ -1,8 +1,6 @@
 import { useRef, useEffect } from 'react';
 import {
-  Button,
   Container,
-  CurveSVG,
   SectionTitle,
   Box,
   PricingStartsAt,
@@ -294,8 +292,8 @@ export const ServicesPage = () => {
                   <div className="mb-4 font-bold">E-Commerce Admin VA</div>
                 </div>
                 <div className="mb-6">
-                  From <span className="font-extrabold text-4xl">$650.00</span>
-                  /mo
+                  From <span className="font-extrabold text-4xl">$900.00</span>
+                  /monthly
                 </div>
                 <div className="mb-6">
                   For businesses that already have systems & processes ready to
@@ -306,7 +304,31 @@ export const ServicesPage = () => {
                     <li className="flex items-start gap-2">
                       <CheckIcon className="text-primary" />
                       <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        E-Commerce Admin VA
+                        E-store Management
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Product listings
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Manage inventories
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Check reviews on e-shops
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Shopify, Amazon, Etsy
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -318,13 +340,13 @@ export const ServicesPage = () => {
                     <li className="flex items-start gap-2">
                       <CheckIcon className="text-primary" />
                       <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Professional Fees
+                        Prof Fees
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckIcon className="text-primary" />
                       <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Flexible Working Schedule
+                        Flexible Working Schedules
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -349,8 +371,8 @@ export const ServicesPage = () => {
                   <div className="mb-4 font-bold">Financial Admin VA</div>
                 </div>
                 <div className="mb-6">
-                  From <span className="font-extrabold text-4xl">$800.00</span>
-                  /mo
+                  From <span className="font-extrabold text-4xl">$750.00</span>
+                  /monthly
                 </div>
                 <div className="mb-6">
                   For businesses that already have systems & processes ready to
@@ -361,7 +383,25 @@ export const ServicesPage = () => {
                     <li className="flex items-start gap-2">
                       <CheckIcon className="text-primary" />
                       <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Financial Admin VA
+                        Accounting
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Bookkeeping
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Financial Reports
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Audits
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -373,15 +413,15 @@ export const ServicesPage = () => {
                     <li className="flex items-start gap-2">
                       <CheckIcon className="text-primary" />
                       <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Professional Fees
+                        Prof Fees
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckIcon className="text-primary" />
                       <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Flexible Working Schedule
+                        Flexible Working Schedules
                       </span>
-                    </li>
+                    </li>{' '}
                     <li className="flex items-start gap-2">
                       <CheckIcon className="text-primary" />
                       <span className="text-base sm:text-[17px] mt-[1px] font-bold">

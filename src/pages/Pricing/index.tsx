@@ -140,7 +140,7 @@ export const PricingPage = () => {
                 </div>
                 <div className="mb-6">
                   From <span className="font-extrabold text-4xl">$450.00</span>
-                  /mo
+                  /monthly
                 </div>
                 <div className="mb-6">
                   For businesses that already have systems & processes ready to
@@ -200,7 +200,7 @@ export const PricingPage = () => {
                 </div>
                 <div className="mb-6">
                   From <span className="font-extrabold text-4xl">$900.00</span>
-                  /mo
+                  /monthly
                 </div>
                 <div className="mb-6">
                   For businesses that already have systems & processes ready to

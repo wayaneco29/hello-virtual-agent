@@ -20,9 +20,9 @@ export const HearFromClients = () => {
                 className="h-16 w-16 sm:h-20 sm:w-20"
               />
               <div>
-                <div className="text-sm sm:text-base font-bold">Joey F</div>
+                <div className="text-sm sm:text-base font-bold">Joey F,</div>
                 <div className="text-sm sm:text-base font-bold text-secondary">
-                  Co Founder of Frontiers Innovations, Inc
+                  Frontier Innovations, Inc.
                 </div>
               </div>
             </div>
@@ -47,9 +47,9 @@ export const HearFromClients = () => {
                 className="h-16 w-16 sm:h-20 sm:w-20"
               />
               <div>
-                <div className="text-sm sm:text-base font-bold">Joey F</div>
+                <div className="text-sm sm:text-base font-bold">Joey F,</div>
                 <div className="text-sm sm:text-base font-bold text-secondary">
-                  Co Founder of Frontiers Innovations, Inc
+                  Frontier Innovations, Inc.
                 </div>
               </div>
             </div>

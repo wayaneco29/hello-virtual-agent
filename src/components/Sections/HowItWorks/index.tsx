@@ -59,7 +59,7 @@ export const HowItWorks = () => {
                         <div className="flex flex-col gap-4">
                           <Case className="text-secondary w-12 h-12 mx-auto" />
                           <div className="text-xl font-extrabold text-center text-secondary">
-                            Meet Your Assistant
+                            Send out contracts and Documents needed
                           </div>
                           <div className="text-center">
                             Based on your needs, we will match you with the
@@ -88,7 +88,7 @@ export const HowItWorks = () => {
                         <div className="flex flex-col gap-4">
                           <Calendar className="text-secondary w-12 h-12 mx-auto" />
                           <div className="text-xl font-extrabold text-center text-secondary">
-                            Free Trial
+                            Meet and interview your VA
                           </div>
                           <div className="text-center">
                             You and your appointed VA have 4 free hours to use

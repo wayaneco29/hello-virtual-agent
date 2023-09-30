@@ -22,7 +22,7 @@ export const BookACall = () => {
         the risk
       </SectionTitle>
       <div className="px-6 md:px-20 my-10 text-center">
-        For over 10 years, Hello Virtual Agent has been training, recruiting,
+        For over the years, Hello Virtual Agent has been training, recruiting,
         and managing Virtual Assistants. Our recruitment process guarantees that
         only the most qualified Virtual Assistants are recommended for
         employment.

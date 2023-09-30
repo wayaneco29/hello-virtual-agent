@@ -40,12 +40,12 @@ export const Footer = () => {
           <div className="flex-1 flex gap-0 flex-col text-center sm:text-left">
             <div className="text-secondary font-bold mb-1">General VA</div>
             {GENERAL_VA.map(item => (
-              <div
+              <a
+                href={`mailto:team@hellovirtualagent.com`}
                 className="cursor-pointer hover:text-secondary"
-                onClick={() => navigate(ROUTE_BOOK)}
               >
                 {item}
-              </div>
+              </a>
             ))}
           </div>
           <div className="flex-1 flex flex-col text-center sm:text-left">
@@ -87,10 +87,10 @@ export const Footer = () => {
       </div>
       <div className="wrapper py-14">
         <div className="flex justify-center items-center flex-col text-[14px]">
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <img src={Phone} alt="Contact" className="w-4 mr-2" />
             <span>0935-2474-155</span>
-          </div>
+          </div> */}
           <div className="flex items-center mb-3">
             <img src={Email} alt="Contact" className="w-4 mr-2" />
             <span>team@hellovirtualagent.com</span>

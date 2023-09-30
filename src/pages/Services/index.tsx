@@ -221,69 +221,7 @@ export const ServicesPage = () => {
         </div>
         <div className="px-4 pb-16 lg:px-10 xl:px-[10%]">
           <div className="flex gap-6 mt-5 justify-center flex-col lg:flex-row lg:mt-20">
-            <div className="max-w-[500px] mx-auto flex flex-1 flex-col">
-              <div className="p-6 border shadow-md rounded-md bg-white">
-                <div className="mb-4 border-b">
-                  <div className="font-bold text-2xl mb-2 text-primary">
-                    STARTER
-                  </div>
-                  <div className="mb-3 font-bold">
-                    General Virtual Assistant
-                  </div>
-                </div>
-                <div className="mb-6">
-                  From <span className="font-extrabold text-4xl">$450.00</span>
-                  /mo
-                </div>
-                <div className="mb-6">
-                  For businesses that already have systems & processes ready to
-                  hire a virtual assistant (VA)
-                </div>
-                <div className="mb-6">
-                  <ul className="list-none text-left flex flex-col gap-2">
-                    <li className="flex items-start gap-2">
-                      <CheckIcon className="text-primary" />
-                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        General Virtual Assistant
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckIcon className="text-primary" />
-                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Maintenance Fees
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckIcon className="text-primary" />
-                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Professional Fees
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckIcon className="text-primary" />
-                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Flexible Working Schedule
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckIcon className="text-primary" />
-                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                        Back Office Support
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-                <button className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3">
-                  GET STARTED
-                </button>
-              </div>
-            </div>
-            <div className="max-w-[500px] mx-auto flex flex-1 flex-col relative mt-10 lg:mt-0">
-              <div className="absolute w-full rounded-t-xl bg-secondary p-4 -top-[45px]">
-                <div className="text-center font-bold text-white">
-                  MOST POPULAR!
-                </div>
-              </div>
+            <div className="max-w-[500px] mx-auto flex flex-1 flex-col relative">
               <div className="p-6 border rounded-md shadow-md bg-white">
                 <div className="mb-4 border-b">
                   <div className="font-bold text-xl mb-2 text-primary">
@@ -347,6 +285,68 @@ export const ServicesPage = () => {
                       <CheckIcon className="text-primary" />
                       <span className="text-base sm:text-[17px] mt-[1px] font-bold">
                         Flexible Working Schedules
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Back Office Support
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <button className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3">
+                  GET STARTED
+                </button>
+              </div>
+            </div>
+            <div className="max-w-[500px] mx-auto flex flex-1 flex-col relative mt-10 lg:mt-0">
+              <div className="absolute w-full rounded-t-xl bg-secondary p-4 -top-[45px]">
+                <div className="text-center font-bold text-white">
+                  MOST POPULAR!
+                </div>
+              </div>
+              <div className="p-6 border shadow-md rounded-md bg-white">
+                <div className="mb-4 border-b">
+                  <div className="font-bold text-2xl mb-2 text-primary">
+                    STARTER
+                  </div>
+                  <div className="mb-3 font-bold">
+                    General Virtual Assistant
+                  </div>
+                </div>
+                <div className="mb-6">
+                  From <span className="font-extrabold text-4xl">$600.00</span>
+                  /monthly
+                </div>
+                <div className="mb-6">
+                  For businesses that already have systems & processes ready to
+                  hire a virtual assistant (VA)
+                </div>
+                <div className="mb-6">
+                  <ul className="list-none text-left flex flex-col gap-2">
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        General Virtual Assistant
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Maintenance Fees
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Professional Fees
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckIcon className="text-primary" />
+                      <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                        Flexible Working Schedule
                       </span>
                     </li>
                     <li className="flex items-start gap-2">

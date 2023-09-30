@@ -38,10 +38,6 @@ export const PricingStartsAt = () => {
               </div>
               <div className="flex gap-3 font-bold">
                 <CheckIcon />
-                <span>Free Trial</span>
-              </div>
-              <div className="flex gap-3 font-bold">
-                <CheckIcon />
                 <span>Money-Back Guarantee</span>
               </div>
               <div className="flex gap-3 font-bold">

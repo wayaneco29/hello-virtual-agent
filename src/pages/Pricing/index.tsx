@@ -1,7 +1,6 @@
+import { u } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
 import {
-  Button,
-  Container,
   SectionTitle,
   PricingStartsAt,
   BookACall,
@@ -258,7 +257,9 @@ export const PricingPage = () => {
                     </li>
                   </ul>
                 </div>
-                <button className="w-full font-bold text-white border border-solid border-secondary py-2 bg-secondary shadow-md rounded-md md:py-3">
+                <button className="w-full font-bold text-white border border-solid border-secondary py-2 bg-secondary shadow-md rounded-md md:py-3" onClick={() => {
+
+                }}>
                   GET STARTED
                 </button>
               </div>

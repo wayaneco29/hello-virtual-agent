@@ -57,7 +57,7 @@ export const BookPage = () => {
           <div className="order-2 w-full sm:w-[460px] min-h-[300px] self-center lg:self-start lg:order-none">
             <div className="bg-white p-4 rounded-2xl shadow-md relative z-10">
               <InlineWidget
-                url="https://calendly.com/wayaneco29/free-consultation"
+                url="https://calendly.com/hvakareen/60min"
                 styles={{
                   height: calendarHeight,
                 }}

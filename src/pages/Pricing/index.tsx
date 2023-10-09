@@ -1,10 +1,6 @@
-import { u } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
-import {
-  SectionTitle,
-  PricingStartsAt,
-  BookACall,
-} from 'components';
+import { SectionTitle, PricingStartsAt, BookACall } from 'components';
 
 import { CheckIcon } from 'components/SVG';
 
@@ -14,6 +10,8 @@ import BrushStroke64 from 'assets/images/strokes/brush-stroke-64.webp';
 
 export const PricingPage = () => {
   const ref = useRef();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -195,7 +193,12 @@ export const PricingPage = () => {
                     </li>
                   </ul>
                 </div>
-                <button className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3 ">
+                <button
+                  className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3 "
+                  onClick={() => {
+                    navigate('/book-a-free-consultation');
+                  }}
+                >
                   GET STARTED
                 </button>
               </div>
@@ -257,9 +260,12 @@ export const PricingPage = () => {
                     </li>
                   </ul>
                 </div>
-                <button className="w-full font-bold text-white border border-solid border-secondary py-2 bg-secondary shadow-md rounded-md md:py-3" onClick={() => {
-
-                }}>
+                <button
+                  className="w-full font-bold text-white border border-solid border-secondary py-2 bg-secondary shadow-md rounded-md md:py-3"
+                  onClick={() => {
+                    navigate('/book-a-free-consultation');
+                  }}
+                >
                   GET STARTED
                 </button>
               </div>
@@ -332,7 +338,12 @@ export const PricingPage = () => {
                     </li>
                   </ul>
                 </div>
-                <button className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3">
+                <button
+                  className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3"
+                  onClick={() => {
+                    navigate('/book-a-free-consultation');
+                  }}
+                >
                   GET STARTED
                 </button>
               </div>

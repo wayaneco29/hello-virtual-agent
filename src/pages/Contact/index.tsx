@@ -103,6 +103,8 @@ export const ContactUs = () => {
                     const templateParams = {
                       firstName: firstName.value,
                       lastName: lastName.value,
+                      to_name: 'Hello Virtual Agent',
+                      from_name: `${firstName.value} ${lastName.value}`,
                       email: email.value,
                       phoneNumber: phoneNumber.value,
                       message: message.value,

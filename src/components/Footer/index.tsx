@@ -41,7 +41,7 @@ export const Footer = () => {
             <div className="text-secondary font-bold mb-1">General VA</div>
             {GENERAL_VA.map(item => (
               <div
-                className="cursor-pointer hover:text-secondary"
+                className="cursor-pointer hover:text-secondary w-fit"
                 onClick={() => navigate(ROUTE_BOOK)}
               >
                 {item}
@@ -54,7 +54,7 @@ export const Footer = () => {
             </div>
             {FINANCIAL_VA.map(item => (
               <div
-                className="cursor-pointer hover:text-secondary"
+                className="cursor-pointer hover:text-secondary w-fit"
                 onClick={() => navigate(ROUTE_BOOK)}
               >
                 {item}
@@ -65,7 +65,7 @@ export const Footer = () => {
             </div>
             {ECOMMERCE_VA.map(item => (
               <div
-                className="cursor-pointer hover:text-secondary"
+                className="cursor-pointer hover:text-secondary w-fit"
                 onClick={() => navigate(ROUTE_BOOK)}
               >
                 {item}
@@ -73,12 +73,12 @@ export const Footer = () => {
             ))}
           </div>
           <div className="flex-1 flex flex-col text-center sm:text-left">
-            <div className="text-secondary font-bold mb-1 ">Careers</div>
+            <div className="text-secondary font-bold mb-1">Careers</div>
             <a
               href="https://forms.gle/9TiCm46rZd4g6DpM6"
               // ref="noreferrer"
               target="_blank"
-              className="hover:text-secondary"
+              className="w-fit hover:text-secondary"
             >
               Job Vacancies
             </a>

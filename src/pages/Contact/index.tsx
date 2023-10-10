@@ -124,10 +124,12 @@ export const ContactUs = () => {
                         phoneNumber.value = '';
                         message.value = '';
 
+                        console.log('SUCESS');
                         setIsLoading(false);
                         setResponseType('success');
                       })
                       .catch(() => {
+                        console.log('FAIL');
                         setIsLoading(false);
                         setResponseType('fail');
                       });
@@ -234,7 +236,7 @@ export const ContactUs = () => {
                   {responseType && (
                     <div
                       className={classNames(
-                        'font-bold text-center bg-red-500 py-2 rounded-md text-white',
+                        'font-bold text-center py-2 rounded-md text-white',
                         responseType === 'success'
                           ? 'bg-green-500'
                           : 'bg-red-500'

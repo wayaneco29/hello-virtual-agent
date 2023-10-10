@@ -73,8 +73,15 @@ export const Footer = () => {
             ))}
           </div>
           <div className="flex-1 flex flex-col text-center sm:text-left">
-            <div className="text-secondary font-bold mb-1">Careers</div>
-            <div>Job Vacancies</div>
+            <div className="text-secondary font-bold mb-1 ">Careers</div>
+            <a
+              href="https://forms.gle/9TiCm46rZd4g6DpM6"
+              // ref="noreferrer"
+              target="_blank"
+              className="hover:text-secondary"
+            >
+              Job Vacancies
+            </a>
           </div>
           <div className="flex-1 flex flex-col overflow-hidden">
             <img

@@ -58,7 +58,7 @@ export const HomePage = () => {
           src={BrushStroke31}
           className="absolute md:-right-96 top-32 lg:top-0 scale-125 md:scale-100"
         />
-        <div className="min-h-[85dvh] flex items-center w-full flex-col">
+        <div className="relative min-h-[85dvh] flex items-center w-full flex-col">
           <div className="px-6 lg:px-14 2xl:px-72 my-auto w-full">
             <div className="flex items-center flex-col md:flex-row lg:flex-row">
               <div className="flex-1">

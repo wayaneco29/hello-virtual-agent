@@ -27,7 +27,6 @@ export const WhyHVAIsDifferent = () => {
           <div className="shadow-lg rounded-lg bg-white h-full flex flex-col">
             <div className="border-b p-6 border-solid border-gray-200">
               <div className="font-bold text-3xl">HVA Assistant</div>
-              <div className="mt-1 text-gray-400">Requirements</div>
             </div>
             <div className="flex flex-col gap-4 p-6 flex-1">
               <div className="flex gap-3">
@@ -53,15 +52,15 @@ export const WhyHVAIsDifferent = () => {
             </div>
             <div className="p-6 bg-primary/30 rounded-b-lg">
               <div className="text-black/80">Total cost monthly</div>
-              <div className="text-black font-bold text-2xl">$450.00</div>
+              <div className="text-black font-bold text-2xl">$450.00 USD</div>
             </div>
           </div>
         </div>
+        <div className="self-center font-bold">VS</div>
         <div className="w-full sm:mx-auto sm:w-[390px] md:w-[390px]">
           <div className="shadow-lg rounded-lg bg-white h-full flex flex-col">
             <div className="border-b p-6 border-solid border-gray-200">
               <div className="font-bold text-3xl">Standard Employee</div>
-              <div className="mt-1 text-gray-400">Requirements</div>
             </div>
             <div className="flex flex-col gap-4 p-6">
               <div className="flex gap-3">
@@ -87,7 +86,7 @@ export const WhyHVAIsDifferent = () => {
             </div>
             <div className="p-6 bg-red-400 rounded-b-lg">
               <div className="text-white/80">Total cost monthly</div>
-              <div className="text-white font-bold text-2xl">$600.00</div>
+              <div className="text-white font-bold text-2xl">$600.00 USD</div>
             </div>
           </div>
         </div>

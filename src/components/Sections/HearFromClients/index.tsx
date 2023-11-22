@@ -10,8 +10,8 @@ export const HearFromClients = () => {
           Hear from <span className="text-secondary">Happy Clients</span>
         </SectionTitle>
       </div>
-      <div className="mt-6 sm:mt-16 flex flex-col md:flex-row gap-10">
-        <div className="flex-1 pr-6 px-4">
+      <div className="mt-6 justify-center sm:mt-16 flex flex-col md:flex-row gap-10">
+        <div className=" pr-6 px-4 w-full lg:w-[500px]">
           <div className="flex flex-col">
             <div className="flex gap-4 sm:gap-6">
               <img
@@ -38,7 +38,7 @@ export const HearFromClients = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 pr-6 px-4">
+        {/* <div className="flex-1 pr-6 px-4">
           <div className="flex flex-col">
             <div className="flex gap-4 sm:gap-6">
               <img
@@ -61,7 +61,7 @@ export const HearFromClients = () => {
               and not assume or guess
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="text-center mt-10">
         <button className="px-6 py-2 font-bold text-white bg-secondary rounded-md">

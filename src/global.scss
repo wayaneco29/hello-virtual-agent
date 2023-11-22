@@ -26,19 +26,19 @@ html {
   font-size: 17px;
 }
 
-.alice-carousel__prev-btn,
-.alice-carousel__next-btn {
-  display: none;
-}
-
-// .alice-carousel__dots-item {
-//   width: 20px !important;
-//   height: 4px !important;
-//   border-radius: 2px !important;
-//   &.__active {
-//     background-color: var(--primary) !important;
-//   }
+// .alice-carousel__prev-btn,
+// .alice-carousel__next-btn {
+//   display: none;
 // }
+
+.alice-carousel__dots-item {
+  width: 20px !important;
+  height: 4px !important;
+  border-radius: 2px !important;
+  &.__active {
+    background-color: var(--primary) !important;
+  }
+}
 .mapouter {
   position: relative;
   text-align: right;

@@ -43,8 +43,6 @@ export const ServicesPage = () => {
     'alice-carousel__stage'
   )?.[0];
 
-  console.log(aliceCarousel);
-
   aliceCarousel?.addEventListener('mousedown', event => {
     aliceCarousel.classList.add('!cursor-grabbing');
   });
@@ -152,7 +150,6 @@ export const ServicesPage = () => {
               568: { items: 2 },
               1024: { items: 3 },
             }}
-            disableDotsControls
             disableButtonsControls
             items={[
               <Box

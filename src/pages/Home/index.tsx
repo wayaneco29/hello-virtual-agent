@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 
 import {
   WhatCanYouOutSource,
@@ -17,6 +18,7 @@ import Banner from 'assets/images/Team.svg';
 
 export const HomePage = () => {
   const ref = useRef();
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -78,13 +80,20 @@ export const HomePage = () => {
                     Free up your time for things that are important to you, and
                     pay only for the hours you need, at a low cost.
                   </div>
-                  <button className="px-6 py-2 md:px-10 md:py-3 rounded-md shadow bg-secondary text-white font-bold mt-7">
+                  <button
+                    className="px-6 py-2 md:px-10 md:py-3 rounded-md shadow bg-secondary text-white font-bold mt-7"
+                    onClick={() => navigate('/book-a-free-consultation')}
+                  >
                     GET STARTED
                   </button>
                 </div>
               </div>
               <div className="flex-1">
-                <img src={Banner} className="relative z-10 hidden md:block" />
+                <img
+                  src={Banner}
+                  className="relative z-10 hidden md:block"
+                  alt="Hello Virtual Agent Home Banner"
+                />
               </div>
             </div>
           </div>

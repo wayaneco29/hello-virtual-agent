@@ -107,7 +107,10 @@ export const HomePage = () => {
               Do you want to simplify and automate your business with
               intelligent digital tools and experienced Virtual Assistants?
             </div>
-            <button className="py-2 px-6 text-base mt-6 sm:py-3 sm:px-10 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit shadow-md sm:w-fit">
+            <button
+              className="py-2 px-6 text-base mt-6 sm:py-3 sm:px-10 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit shadow-md sm:w-fit"
+              onClick={() => navigate('/contact-us')}
+            >
               LET'S CHAT
             </button>
           </div>
@@ -124,7 +127,10 @@ export const HomePage = () => {
               We’re different because we’re an end-to-end service that will hold
               your hand every step of the way.
             </div>
-            <button className="py-2 px-6 mt-4 text-base sm:py-4 sm:px-10 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit">
+            <button
+              className="py-2 px-6 mt-4 text-base sm:py-4 sm:px-10 sm:mt-0 rounded-md bg-secondary text-white font-bold tracking-wide min-w-fit"
+              onClick={() => navigate('/contact-us')}
+            >
               LET'S CHAT
             </button>
           </div>

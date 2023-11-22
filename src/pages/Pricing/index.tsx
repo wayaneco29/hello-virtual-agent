@@ -62,7 +62,20 @@ export const PricingPage = () => {
                   <br />
                   Affordable Plans
                 </SectionTitle>
-                <button className="px-6 py-2 md:px-16 md:py-3 rounded-md shadow bg-secondary text-white font-bold mt-7 w-fit">
+                <button
+                  className="px-6 py-2 md:px-16 md:py-3 rounded-md shadow bg-secondary text-white font-bold mt-7 w-fit"
+                  onClick={() => {
+                    const el =
+                      document
+                        .getElementById('pricelist')
+                        ?.getBoundingClientRect().top + window.scrollY;
+
+                    window.scroll({
+                      top: el - 70,
+                      behavior: 'smooth',
+                    });
+                  }}
+                >
                   GET STARTED
                 </button>
               </div>
@@ -113,7 +126,10 @@ export const PricingPage = () => {
           </div>
         </div>
       </section>
-      <section className="relative bg-primary/30 overflow-hidden">
+      <section
+        className="relative bg-primary/30 overflow-hidden"
+        id="pricelist"
+      >
         <img src={BrushStroke64} className="absolute left-0 top-72 -z-10" />
         <div className="main-wrapper">
           <div className="py-14 xl:py-32">
@@ -130,7 +146,7 @@ export const PricingPage = () => {
             </div>
           </div>
         </div>
-        <div className="px-4 pb-16 lg:px-10 [1024]:px-[10%] 2xl:px-[15%]">
+        <div className="px-4 pb-16 lg:px-10 2xl:px-[10%]">
           <div className="flex gap-6 mt-5 justify-center flex-col lg:flex-row lg:mt-20">
             <AliceCarousel
               mouseTracking

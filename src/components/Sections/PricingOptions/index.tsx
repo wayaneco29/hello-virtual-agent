@@ -1,8 +1,11 @@
 import { Container, SectionTitle } from 'components';
+import { useNavigate } from 'react-router-dom';
 
 import { CheckIcon } from 'components/SVG';
 
 export const PricingStartsAt = () => {
+  const navigate = useNavigate();
+
   return (
     <Container parentClassName="overflow-hidden" className="py-16 md:py-32">
       <div className="rounded-lg shadow-lg px-6 py-10 bg-primary/30 md:p-14">
@@ -46,7 +49,10 @@ export const PricingStartsAt = () => {
               </div>
             </div>
             <div className="mt-10">
-              <button className="bg-secondary py-2 px-6 text-white rounded-md shadow-md font-bold transition-colors hover:bg-transparent md:py-3 md:px-8">
+              <button
+                className="bg-secondary py-2 px-6 text-white rounded-md shadow-md font-bold transition-colors md:py-3 md:px-8"
+                onClick={() => navigate('/pricing')}
+              >
                 SEE PRICING OPTIONS
               </button>
             </div>

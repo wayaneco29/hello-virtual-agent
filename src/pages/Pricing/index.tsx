@@ -65,13 +65,13 @@ export const PricingPage = () => {
                 <button
                   className="px-6 py-2 md:px-16 md:py-3 rounded-md shadow bg-secondary text-white font-bold mt-7 w-fit"
                   onClick={() => {
-                    const el =
-                      document
-                        .getElementById('pricelist')
-                        ?.getBoundingClientRect().top + window.scrollY;
+                    const element = document.getElementById('pricelist');
+
+                    const y =
+                      element!.getBoundingClientRect().top + window.scrollY;
 
                     window.scroll({
-                      top: el - 70,
+                      top: y - 70,
                       behavior: 'smooth',
                     });
                   }}

@@ -2,6 +2,7 @@ import { Container, SectionTitle, Button } from 'components';
 import AliceCarousel from 'react-alice-carousel';
 
 import VAPatricia from 'assets/images/va-patricia.webp';
+import VASarah from 'assets/images/va-sarah.webp';
 import ReviewBadge from 'assets/images/Review.webp';
 
 export const VaTestimonials = () => {
@@ -41,7 +42,7 @@ export const VaTestimonials = () => {
           autoPlayInterval={5000}
           disableButtonsControls
           items={[
-            <div className="w-auto md:w-[500px] md:mx-auto">
+            <div className="w-auto px-10 lg:w-[500px] md:mx-auto">
               <div className="flex flex-col">
                 <div className="flex gap-4 sm:gap-6">
                   <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden">
@@ -71,6 +72,48 @@ export const VaTestimonials = () => {
                   delivering exceptional results. I highly recommend HVA for
                   their remarkable skills and positive influence in any
                   professional setting.
+                </div>
+              </div>
+            </div>,
+            <div className="w-auto px-10 lg:w-[500px] md:mx-auto">
+              <div className="flex flex-col">
+                <div className="flex gap-4 sm:gap-6">
+                  <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden">
+                    <img
+                      src={VASarah}
+                      alt="Hello Virtual Agent Clients Reviews"
+                      className="bg-contain w-full h-full"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-sm sm:text-base font-bold">
+                      VA Sarah
+                    </div>
+                    <div className="text-sm sm:text-base font-bold text-secondary">
+                      General VA / Social Media Manager
+                    </div>
+                  </div>
+                </div>
+                <div className="my-4 sm:my-8">
+                  <img src={ReviewBadge} alt="" className="h-4 sm:h-auto" />
+                </div>
+                <div className="text-sm sm:text-base">
+                  I am writing to provide you with a testimony for a virtual
+                  agency who is a blessing to me. Working with Hello Virtual
+                  Agent has been an absolute pleasure. From the moment we
+                  started our collaboration, I was impressed by the
+                  professionalism and dedication of the team. They have
+                  consistently gone above and beyond to ensure that our needs
+                  are met and our expectations exceeded. One aspect of our
+                  virtual agency that stood out to me is the level of
+                  communication and transparency. The team is always readily
+                  available to answer any questions or concerns we may have.
+                  This open line of communication has allowed us to work
+                  seamlessly together and achieve outstanding results. It is
+                  this positive mindset that truly sets our virtual agency apart
+                  from the rest. I am grateful to have had the opportunity to
+                  work with them, and I look forward to our continued
+                  partnership.
                 </div>
               </div>
             </div>,

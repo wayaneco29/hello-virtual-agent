@@ -177,7 +177,7 @@ export const PricingPage = () => {
                       /monthly
                     </div>
                     <div className="mb-6">
-                      Part time price good for 4 hrs charge up to 80 hrs per
+                      Part time price good for 4 hrs/day up to 80 hours per
                       month.
                     </div>
                     <div className="mb-6">

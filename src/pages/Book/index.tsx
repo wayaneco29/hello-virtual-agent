@@ -77,10 +77,10 @@ export const BookPage = () => {
                 only for the hours you need, at a low cost.
               </div>
               <div className="flex flex-col gap-4 mt-12">
-                <div className="flex gap-2 items-center">
+                {/* <div className="flex gap-2 items-center">
                   <Phone />{' '}
                   <span className="font-bold text-secondary">415-300-0730</span>
-                </div>
+                </div> */}
                 <div className="flex gap-2 items-center">
                   <Email />{' '}
                   <span className="font-bold text-secondary">

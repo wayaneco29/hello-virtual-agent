@@ -7,6 +7,7 @@ import {
   SectionTitle,
   PricingStartsAt,
   BookACall,
+  VaTestimonials,
 } from 'components';
 
 import AboutTeam from 'assets/images/AboutTeam.svg';
@@ -104,6 +105,7 @@ export const AboutPage = () => {
           </div>
         </div>
       </section>
+      <VaTestimonials />
       <PricingStartsAt />
       <BookACall />
     </div>

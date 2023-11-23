@@ -11,6 +11,7 @@ import {
   PricingStartsAt,
   BookACall,
   SectionTitle,
+  VaTestimonials,
 } from 'components';
 
 import BrushStroke31 from 'assets/images/strokes/brush-stroke-31.webp';

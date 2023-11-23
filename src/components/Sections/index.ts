@@ -7,3 +7,4 @@ export * from './PricingOptions';
 export * from './OurTeam';
 export * from './BookACall';
 export * from './Faqs';
+export * from './VaTestimonials';

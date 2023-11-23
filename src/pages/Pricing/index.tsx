@@ -292,6 +292,85 @@ export const PricingPage = () => {
                     </button>
                   </div>
                 </div>,
+                <div className="max-w-[350px] xl:max-w-[400px] mx-auto flex flex-1 flex-col order-4">
+                  <div className="p-6 rounded-md shadow-md border bg-white">
+                    <div className="mb-4 border-b">
+                      <div className="font-bold text-xl mb-2 text-primary">
+                        PROFESSIONAL
+                      </div>
+                      <div className="mb-4 font-bold">Financial Admin VA</div>
+                    </div>
+                    <div className="mb-6">
+                      From{' '}
+                      <span className="font-extrabold text-4xl">$750.00</span>
+                      /monthly
+                    </div>
+                    <div className="mb-6">
+                      For businesses that already have systems & processes ready
+                      to hire a virtual assistant (VA)
+                    </div>
+                    <div className="mb-6">
+                      <ul className="list-none text-left flex flex-col gap-2">
+                        <li className="flex items-start gap-2">
+                          <CheckIcon className="text-primary" />
+                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                            Accounting
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckIcon className="text-primary" />
+                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                            Bookkeeping
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckIcon className="text-primary" />
+                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                            Financial Reports
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckIcon className="text-primary" />
+                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                            Audits
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckIcon className="text-primary" />
+                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                            Maintenance Fees
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckIcon className="text-primary" />
+                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                            Prof Fees
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckIcon className="text-primary" />
+                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                            Flexible Working Schedules
+                          </span>
+                        </li>{' '}
+                        <li className="flex items-start gap-2">
+                          <CheckIcon className="text-primary" />
+                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
+                            Back Office Support
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <button
+                      className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3"
+                      onClick={() => {
+                        navigate('/book-a-free-consultation');
+                      }}
+                    >
+                      GET STARTED
+                    </button>
+                  </div>
+                </div>,
                 <div className="max-w-[350px] xl:max-w-[400px] mx-auto flex flex-1 flex-col order-3">
                   <div className="p-6 border rounded-md shadow-md bg-white">
                     <div className="mb-4 border-b">
@@ -369,85 +448,6 @@ export const PricingPage = () => {
                     </div>
                     <button
                       className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3 "
-                      onClick={() => {
-                        navigate('/book-a-free-consultation');
-                      }}
-                    >
-                      GET STARTED
-                    </button>
-                  </div>
-                </div>,
-                <div className="max-w-[350px] xl:max-w-[400px] mx-auto flex flex-1 flex-col order-4">
-                  <div className="p-6 rounded-md shadow-md border bg-white">
-                    <div className="mb-4 border-b">
-                      <div className="font-bold text-xl mb-2 text-primary">
-                        PROFESSIONAL
-                      </div>
-                      <div className="mb-4 font-bold">Financial Admin VA</div>
-                    </div>
-                    <div className="mb-6">
-                      From{' '}
-                      <span className="font-extrabold text-4xl">$750.00</span>
-                      /monthly
-                    </div>
-                    <div className="mb-6">
-                      For businesses that already have systems & processes ready
-                      to hire a virtual assistant (VA)
-                    </div>
-                    <div className="mb-6">
-                      <ul className="list-none text-left flex flex-col gap-2">
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Accounting
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Bookkeeping
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Financial Reports
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Audits
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Maintenance Fees
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Prof Fees
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Flexible Working Schedules
-                          </span>
-                        </li>{' '}
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Back Office Support
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <button
-                      className="w-full font-bold shadow-md rounded-md py-2 border-primary border md:py-3"
                       onClick={() => {
                         navigate('/book-a-free-consultation');
                       }}

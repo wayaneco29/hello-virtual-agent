@@ -41,7 +41,7 @@ export const HearFromClients = () => {
           autoPlayInterval={5000}
           disableButtonsControls
           items={[
-            <div className="px-4 w-[500px] pr-10">
+            <div className="px-4 w-[500px] pr-10 mx-auto">
               <div className="flex flex-col">
                 <div className="flex gap-4 sm:gap-6">
                   <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden">

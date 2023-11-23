@@ -81,7 +81,10 @@ export const PricingPage = () => {
               </div>
             </div>
             <div className="flex-1">
-              <img src={Auction} className="w-[400px] md:w-[600px]" />
+              <img
+                src={Auction}
+                className="w-[400px] min-h-[300px] md:w-[600px]"
+              />
             </div>
           </div>
         </div>
@@ -174,33 +177,15 @@ export const PricingPage = () => {
                       /monthly
                     </div>
                     <div className="mb-6">
-                      For businesses that already have systems & processes ready
-                      to hire a virtual assistant (VA)
+                      Part time price good for 4 hrs charge up to 80 hrs per
+                      month.
                     </div>
                     <div className="mb-6">
                       <ul className="list-none text-left flex flex-col gap-2">
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Accounting
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Bookkeeping
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Financial Reports
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Audits
+                            General Virtual Assistant
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
@@ -212,15 +197,15 @@ export const PricingPage = () => {
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Prof Fees
+                            Professional Fees
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Flexible Working Schedules
+                            Flexible Working Schedule
                           </span>
-                        </li>{' '}
+                        </li>
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">

@@ -61,7 +61,10 @@ export const ServicesPage = () => {
           <div className="px-6 lg:px-14 2xl:px-72 my-auto w-full mt-32">
             <div className="flex lg:gap-10 items-center flex-col lg:flex-row">
               <div className="flex-1 order-2 lg:order-none">
-                <img src={Consult} className="w-[500px] lg:w-auto" />
+                <img
+                  src={Consult}
+                  className="w-[500px] min-h-[300px] lg:w-auto"
+                />
               </div>
               <div className="flex-1 order-1 lg:order-none">
                 <SectionTitle className="mb-4 font-extrabold">
@@ -241,7 +244,9 @@ export const ServicesPage = () => {
                       <div className="font-bold text-xl mb-2 text-primary">
                         PART TIME
                       </div>
-                      <div className="mb-4 font-bold">Virtual Assistant</div>
+                      <div className="mb-4 font-bold">
+                        General Virtual Assistant
+                      </div>
                     </div>
                     <div className="mb-6">
                       From{' '}
@@ -249,33 +254,15 @@ export const ServicesPage = () => {
                       /monthly
                     </div>
                     <div className="mb-6">
-                      For businesses that already have systems & processes ready
-                      to hire a virtual assistant (VA)
+                      Part time price good for 4 hrs charge up to 80 hrs per
+                      month.
                     </div>
                     <div className="mb-6">
                       <ul className="list-none text-left flex flex-col gap-2">
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Accounting
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Bookkeeping
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Financial Reports
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Audits
+                            General Virtual Assistant
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
@@ -287,15 +274,15 @@ export const ServicesPage = () => {
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Prof Fees
+                            Professional Fees
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Flexible Working Schedules
+                            Flexible Working Schedule
                           </span>
-                        </li>{' '}
+                        </li>
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">

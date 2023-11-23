@@ -62,7 +62,10 @@ export const AboutPage = () => {
               </div>
             </div>
             <div className="flex-1 pr-6">
-              <img src={AboutTeam} className="relative my-auto w-[600px]" />
+              <img
+                src={AboutTeam}
+                className="relative min-h-[300px] my-auto w-[600px]"
+              />
             </div>
           </div>
         </div>

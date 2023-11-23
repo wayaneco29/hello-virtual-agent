@@ -32,11 +32,14 @@ html {
 // }
 
 .alice-carousel__dots-item {
-  width: 20px !important;
-  height: 4px !important;
-  border-radius: 2px !important;
+  width: 25px !important;
+  height: 5px !important;
+  border-radius: 4px !important;
   &.__active {
     background-color: var(--primary) !important;
+  }
+  &:not(.__custom) {
+    background-color: black;
   }
 }
 .mapouter {

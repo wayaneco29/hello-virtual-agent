@@ -42,7 +42,7 @@ export const VaTestimonials = () => {
           autoPlayInterval={5000}
           disableButtonsControls
           items={[
-            <div className="w-auto px-10 lg:w-[500px] md:mx-auto">
+            <div className="w-auto lg:w-[500px] md:mx-auto">
               <div className="flex flex-col">
                 <div className="flex gap-4 sm:gap-6">
                   <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden">
@@ -75,7 +75,7 @@ export const VaTestimonials = () => {
                 </div>
               </div>
             </div>,
-            <div className="w-auto px-10 lg:w-[500px] md:mx-auto">
+            <div className="w-auto lg:w-[500px] md:mx-auto">
               <div className="flex flex-col">
                 <div className="flex gap-4 sm:gap-6">
                   <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden">

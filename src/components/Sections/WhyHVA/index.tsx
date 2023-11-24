@@ -50,10 +50,10 @@ export const WhyHVAIsDifferent = () => {
                 <span className="font-bold">No hidden fees</span>
               </div>
             </div>
-            <div className="p-6 bg-primary/30 rounded-b-lg">
+            {/* <div className="p-6 bg-primary/30 rounded-b-lg">
               <div className="text-black/80">Total cost monthly</div>
               <div className="text-black font-bold text-2xl">$450.00 USD</div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="self-center font-bold">VS</div>
@@ -84,10 +84,10 @@ export const WhyHVAIsDifferent = () => {
                 <span className="font-bold">Many more costs</span>
               </div>
             </div>
-            <div className="p-6 bg-red-400 rounded-b-lg">
+            {/* <div className="p-6 bg-red-400 rounded-b-lg">
               <div className="text-white/80">Total cost monthly</div>
               <div className="text-white font-bold text-2xl">$600.00 USD</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

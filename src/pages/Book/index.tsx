@@ -9,7 +9,7 @@ import {
   PricingStartsAt,
 } from 'components';
 
-import { Phone, Email, Facebook, Instagram, Twitter } from 'components/SVG';
+import { Email, Facebook, Instagram, Tiktok } from 'components/SVG';
 
 import BrushStroke26 from 'assets/images/strokes/brush-stroke-26.webp';
 
@@ -88,10 +88,28 @@ export const BookPage = () => {
                   </span>
                 </div>
                 <div className="border-t pt-5">
-                  <div className="flex gap-6">
-                    <Facebook className="text-secondary cursor-pointer transition-colors hover:text-black" />
-                    <Instagram className="text-secondary cursor-pointer transition-colors hover:text-black" />
-                    <Twitter className="text-secondary cursor-pointer transition-colors hover:text-black" />
+                  <div className="flex gap-6 items-center">
+                    <a
+                      href="https://www.facebook.com/people/Hello-Virtual-Agent/100087956096728"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <Facebook className="text-secondary cursor-pointer transition-colors hover:text-black" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/hellovirtualagent"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <Instagram className="text-secondary cursor-pointer transition-colors hover:text-black" />
+                    </a>
+                    <a
+                      href="https://www.tiktok.com/@hellovirtualagent"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <Tiktok className="text-secondary cursor-pointer transition-colors hover:text-black" />
+                    </a>
                   </div>
                 </div>
               </div>

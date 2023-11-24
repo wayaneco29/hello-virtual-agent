@@ -41,10 +41,6 @@ export const PricingStartsAt = () => {
               </div>
               <div className="flex gap-3 font-bold">
                 <CheckIcon />
-                <span>Money-Back Guarantee</span>
-              </div>
-              <div className="flex gap-3 font-bold">
-                <CheckIcon />
                 <span>Access to Wide Pool of Talent</span>
               </div>
             </div>
@@ -57,12 +53,12 @@ export const PricingStartsAt = () => {
               </button>
             </div>
           </div>
-          <div className="w-full lg:w-[200px] lg:ml-10">
+          <div className="w-full lg:w-auto lg:ml-10">
             <div className="rounded-lg p-6 bg-secondary text-white">
               <div className="flex flex-col items-center lg:py-12">
                 <div className="text-2xl">Starting at</div>
-                <div className="font-extrabold text-[3rem]">$600</div>
-                <div className="text-2xl">per month</div>
+                <div className="font-extrabold text-[3rem]">$400</div>
+                <div className="text-2x text-center">USD per month</div>
               </div>
             </div>
           </div>

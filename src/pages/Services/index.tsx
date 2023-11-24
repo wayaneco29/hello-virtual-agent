@@ -265,18 +265,7 @@ export const ServicesPage = () => {
                             General Virtual Assistant
                           </span>
                         </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Maintenance Fees
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Professional Fees
-                          </span>
-                        </li>
+
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
@@ -333,18 +322,7 @@ export const ServicesPage = () => {
                             General Virtual Assistant
                           </span>
                         </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Maintenance Fees
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Professional Fees
-                          </span>
-                        </li>
+
                         <li className="flex items-start gap-2">
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
@@ -410,18 +388,6 @@ export const ServicesPage = () => {
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
                             Audits
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Maintenance Fees
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Prof Fees
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
@@ -495,18 +461,6 @@ export const ServicesPage = () => {
                           <CheckIcon className="text-primary" />
                           <span className="text-base sm:text-[17px] mt-[1px] font-bold">
                             Shopify, Amazon, Etsy
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Maintenance Fees
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckIcon className="text-primary" />
-                          <span className="text-base sm:text-[17px] mt-[1px] font-bold">
-                            Prof Fees
                           </span>
                         </li>
                         <li className="flex items-start gap-2">

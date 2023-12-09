@@ -3,6 +3,7 @@ import AliceCarousel from 'react-alice-carousel';
 
 import VAPatricia from 'assets/images/va-patricia.webp';
 import VASarah from 'assets/images/va-sarah.webp';
+import VADaine from 'assets/images/va-daine.webp';
 import ReviewBadge from 'assets/images/Review.webp';
 
 export const VaTestimonials = () => {
@@ -32,7 +33,6 @@ export const VaTestimonials = () => {
           responsive={{
             0: { items: 1 },
             568: { items: 1 },
-            780: { items: 2 },
             1024: { items: 2 },
             1200: { items: 2 },
             1400: { items: 3 },
@@ -42,10 +42,10 @@ export const VaTestimonials = () => {
           autoPlayInterval={5000}
           disableButtonsControls
           items={[
-            <div className="w-auto lg:w-[500px] md:mx-auto">
+            <div className="w-auto lg:px-5 md:mx-auto">
               <div className="flex flex-col">
                 <div className="flex gap-4 sm:gap-6">
-                  <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden">
+                  <div className="h-16 w-16 min-w-[4rem] min-h-[4rem] sm:h-20 sm:w-20 sm:min-h-[5rem] sm:min-w-[5rem] rounded-full overflow-hidden">
                     <img
                       src={VAPatricia}
                       alt="Hello Virtual Agent Clients Reviews"
@@ -64,7 +64,7 @@ export const VaTestimonials = () => {
                 <div className="my-4 sm:my-8">
                   <img src={ReviewBadge} alt="" className="h-4 sm:h-auto" />
                 </div>
-                <div className="text-sm sm:text-base">
+                <div className="text-sm sm:text-base xp">
                   Working with Hello Virtual Agent has been a truly rewarding
                   experience. Their professionalism, expertise, and unwavering
                   commitment to excellence have had a profound impact on our
@@ -75,10 +75,10 @@ export const VaTestimonials = () => {
                 </div>
               </div>
             </div>,
-            <div className="w-auto lg:w-[500px] md:mx-auto">
+            <div className="w-auto lg:px-5 md:mx-auto">
               <div className="flex flex-col">
                 <div className="flex gap-4 sm:gap-6">
-                  <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden">
+                  <div className="h-16 w-16 min-w-[4rem] min-h-[4rem] sm:h-20 sm:w-20 sm:min-h-[5rem] sm:min-w-[5rem] rounded-full overflow-hidden">
                     <img
                       src={VASarah}
                       alt="Hello Virtual Agent Clients Reviews"
@@ -97,7 +97,7 @@ export const VaTestimonials = () => {
                 <div className="my-4 sm:my-8">
                   <img src={ReviewBadge} alt="" className="h-4 sm:h-auto" />
                 </div>
-                <div className="text-sm sm:text-base">
+                <div className="text-sm sm:text-base xp">
                   I am writing to provide you with a testimony for a virtual
                   agency who is a blessing to me. Working with Hello Virtual
                   Agent has been an absolute pleasure. From the moment we
@@ -114,6 +114,38 @@ export const VaTestimonials = () => {
                   from the rest. I am grateful to have had the opportunity to
                   work with them, and I look forward to our continued
                   partnership.
+                </div>
+              </div>
+            </div>,
+            <div className="w-auto lg:px-5 md:mx-auto">
+              <div className="flex flex-col">
+                <div className="flex gap-4 sm:gap-6">
+                  <div className="h-16 w-16 min-w-[4rem] min-h-[4rem] sm:h-20 sm:w-20 sm:min-h-[5rem] sm:min-w-[5rem] rounded-full overflow-hidden">
+                    <img
+                      src={VADaine}
+                      alt="Hello Virtual Agent Clients Reviews"
+                      className="bg-contain w-full h-full"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-sm sm:text-base font-bold">
+                      Diana Jane Nares
+                    </div>
+                    <div className="text-sm sm:text-base font-bold text-secondary">
+                      Virtual Assistant
+                    </div>
+                  </div>
+                </div>
+                <div className="my-4 sm:my-8">
+                  <img src={ReviewBadge} alt="" className="h-4 sm:h-auto" />
+                </div>
+                <div className="text-sm sm:text-base xp">
+                  Working with Hello Virtual Agent as a virtual assistant is a
+                  very rewarding experience for me. I get to work anywhere
+                  anytime, the ability to choose my own hours and have more time
+                  with my love ones. All people behind HVA is very accommodating
+                  and very friendly that is why it’s easy working with them.
+                  Looking forward to more milestones.
                 </div>
               </div>
             </div>,

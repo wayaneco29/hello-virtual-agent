@@ -251,7 +251,8 @@ export const ServicesPage = () => {
                     <div className="mb-6">
                       From{' '}
                       <span className="font-extrabold text-4xl">$400.00</span>
-                      /monthly
+                      <span className="font-extrabold"> USD</span>
+                      /month
                     </div>
                     <div className="mb-6">
                       Part time price good for 4 hrs/day up to 80 hours per
@@ -308,7 +309,8 @@ export const ServicesPage = () => {
                     <div className="mb-6">
                       From{' '}
                       <span className="font-extrabold text-4xl">$600.00</span>
-                      /monthly
+                      <span className="font-extrabold"> USD</span>
+                      /month
                     </div>
                     <div className="mb-6">
                       For businesses that already have systems & processes ready
@@ -358,7 +360,8 @@ export const ServicesPage = () => {
                     <div className="mb-6">
                       From{' '}
                       <span className="font-extrabold text-4xl">$750.00</span>
-                      /monthly
+                      <span className="font-extrabold"> USD</span>
+                      /month
                     </div>
                     <div className="mb-6">
                       For businesses that already have systems & processes ready
@@ -425,7 +428,8 @@ export const ServicesPage = () => {
                     <div className="mb-6">
                       From{' '}
                       <span className="font-extrabold text-4xl">$900.00</span>
-                      /monthly
+                      <span className="font-extrabold"> USD</span>
+                      /month
                     </div>
                     <div className="mb-6">
                       For businesses that already have systems & processes ready
